@@ -3,7 +3,7 @@
 ### KishLattice Geometric Harmonic Spectroscopy — Volume 13: *The Aperture*
 
 **KishLattice 16π Initiative LLC** · Timothy John Kish, Founder
-Volume 13 DOI: https://doi.org/10.5281/zenodo.228518 · [kishlattice.com](https://www.kishlattice.com)
+Volume 13 DOI: https://doi.org/10.5281/zenodo.22851850 · [kishlattice.com](https://www.kishlattice.com)
 
 ---
 

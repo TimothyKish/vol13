@@ -1,0 +1,35 @@
+{
+  "run_timestamp": "20260529_004723",
+  "generated_utc": "2026-05-29 00:48:40 UTC",
+  "total_files": 5,
+  "total_elapsed_s": 77.16,
+  "z_score_patches": 0,
+  "plugins": [
+    {
+      "plugin": "report_02_bridge_map",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\bridge_map_full.png"
+      ],
+      "elapsed": 2.5678133964538574
+    },
+    {
+      "plugin": "report_02_universal_histograms",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\histogram_biology_backbone.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\histogram_subnuclear_mass.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\histogram_orbital_ttv.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\histogram_planetary_pacific.png"
+      ],
+      "elapsed": 74.5386815071106
+    }
+  ],
+  "files": [
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\bridge_map_full.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\histogram_biology_backbone.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\histogram_subnuclear_mass.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\histogram_orbital_ttv.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260529_004723\\histogram_planetary_pacific.png"
+  ]
+}

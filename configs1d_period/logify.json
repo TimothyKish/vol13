@@ -1,0 +1,78 @@
+{
+  "version": "1d_period_0.1",
+  "note": "Period-engine field map for Universal Dimensional Lakes",
+  "__field_syntax__": "plain key -> breadth-first nested resolve; 'a.b.c' -> explicit dotted path",
+  "combine_types": {
+    "identity": "x = field (must be > 0)",
+    "abs": "x = |field|",
+    "quadrature": "x = sqrt(sum_i field_i^2) over the listed fields"
+  },
+  "domains": {
+    "quantum_transitional": {
+      "field": "klghs_transition_freq_Hz",
+      "combine": "identity",
+      "target_register": 16,
+      "description": "NIST ASD transition frequency (Hz) - L_emission_nist ANCHOR. Build gate for the period engine."
+    },
+    "universal_angular": {
+      "field": "universal_hz",
+      "combine": "identity",
+      "target_register": null,
+      "description": "STITCHED multi-scale lake (Hz). Cross-population composite -- scoreable only under the four-gate protocol; not a single-population lake."
+    },
+    "universal_energy": {
+      "field": "klghs_x",
+      "combine": "identity",
+      "target_register": 16,
+      "description": "Unified Energy Lake (eV)"
+    },
+    "universal_velocity": {
+      "field": "klghs_x",
+      "combine": "identity",
+      "target_register": 16,
+      "description": "Unified Velocity Lake (m/s)"
+    },
+    "universal_time": {
+      "field": "klghs_x",
+      "combine": "identity",
+      "target_register": 16,
+      "description": "Unified Time Lake (Seconds)"
+    },
+    "universal_mass": {
+      "field": "klghs_x",
+      "combine": "identity",
+      "target_register": 16,
+      "description": "Unified Mass Lake (kg)"
+    },
+    "universal_length": {
+      "field": "klghs_x",
+      "combine": "identity",
+      "target_register": 16,
+      "description": "Unified Length Lake (Meters)"
+    },
+    "universal_topology": {
+      "field": "klghs_x",
+      "combine": "identity",
+      "target_register": 16,
+      "description": "Unified Topology Lake (Degrees)"
+    },
+    "comprehensive_master": {
+      "field": "klghs_x",
+      "combine": "identity",
+      "target_register": 16,
+      "description": "NEGATIVE CONTROL: 22.3M uncalibrated scalars. Demonstrates that mixed units destroy lattice resonance."
+    },
+    "pulsar_spin": {
+      "field": "universal_hz",
+      "combine": "identity",
+      "target_register": null,
+      "description": "SINGLE-POPULATION pulsar spin frequency (Hz), ATNF, F0 or 1/P0. NO stitching, NO cut. PRE-REGISTERED: register UNKNOWN; the claim is INVARIANCE not location (register must survive resampling AND clear the bar). Shape gate FILLED required before scoring."
+    },
+    "nuclear_decay": {
+      "field": "half_life_seconds",
+      "combine": "identity",
+      "target_register": null,
+      "description": "SINGLE-POPULATION nuclear half-life (seconds), IAEA/NNDC nuclide chart. NO stitching. PRE-REGISTERED: register UNKNOWN; claim is INVARIANCE not location. Known single-lump distribution (SPIKED) -> expect BACKGROUND-LIMITED on effective support; scored for completeness."
+    }
+  }
+}

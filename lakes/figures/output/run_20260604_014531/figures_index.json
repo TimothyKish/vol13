@@ -1,0 +1,224 @@
+{
+  "run_timestamp": "20260604_014531",
+  "generated_utc": "2026-06-04 01:55:40 UTC",
+  "total_files": 40,
+  "total_elapsed_s": 609.09,
+  "z_score_patches": 0,
+  "plugins": [
+    {
+      "plugin": "report_01_domain_Ramachandran_scatters",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\scatter_biology_backbone.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\scatter_subnuclear_mass.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\scatter_orbital_ttv.png"
+      ],
+      "elapsed": 13.119330883026123
+    },
+    {
+      "plugin": "report_02_bridge_map",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\bridge_map_full.png"
+      ],
+      "elapsed": 0.743706226348877
+    },
+    {
+      "plugin": "report_02_universal_histograms",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\histogram_biology_backbone.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\histogram_subnuclear_mass.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\histogram_orbital_ttv.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\histogram_planetary_pacific.png"
+      ],
+      "elapsed": 103.72453284263611
+    },
+    {
+      "plugin": "report_03_power_analysis",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\power_analysis_table.png"
+      ],
+      "elapsed": 0.27560901641845703
+    },
+    {
+      "plugin": "report_04_batch_stability",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\batch_stability_violin.png"
+      ],
+      "elapsed": 50.293875217437744
+    },
+    {
+      "plugin": "report_05_wrongbox_delta",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_seismic_japan.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_stellar_rotation.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_stellar_kinematic.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_biology_backbone.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_orbital_ttv.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_subnuclear_mass.png"
+      ],
+      "elapsed": 1.160759687423706
+    },
+    {
+      "plugin": "report_06_register_spectrum",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\register_spectrum_full.png"
+      ],
+      "elapsed": 0.2916133403778076
+    },
+    {
+      "plugin": "report_08_subnuclear_dual",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\subnuclear_resonance_map.png"
+      ],
+      "elapsed": 105.80179047584534
+    },
+    {
+      "plugin": "report_09_floor_smear",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\floor_smear_biology_backbone.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\floor_smear_subnuclear_mass.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\floor_smear_orbital_ttv.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\floor_smear_planetary_pacific.png"
+      ],
+      "elapsed": 107.72218871116638
+    },
+    {
+      "plugin": "report_10_kinematic_principle",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\principle_stellar_proof.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\principle_orbital_proof.png"
+      ],
+      "elapsed": 0.6883816719055176
+    },
+    {
+      "plugin": "report_11_seismic_sovereign",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\seismic_sovereign_falsification.png"
+      ],
+      "elapsed": 105.97148990631104
+    },
+    {
+      "plugin": "report_12_pinch_heatmap",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\distance_matrix_heatmap.png"
+      ],
+      "elapsed": 0.7657909393310547
+    },
+    {
+      "plugin": "report_13_null_confidence",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\null_confidence_curves.png"
+      ],
+      "elapsed": 4.435164928436279
+    },
+    {
+      "plugin": "report_14_register_taxonomy",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\register_taxonomy_matrix.png"
+      ],
+      "elapsed": 0.36159324645996094
+    },
+    {
+      "plugin": "report_16_artifact_falsification",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\artifact_falsification.png"
+      ],
+      "elapsed": 0.23983526229858398
+    },
+    {
+      "plugin": "report_17_cross_scale_bridge",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\cross_scale_bridge.png"
+      ],
+      "elapsed": 0.4192628860473633
+    },
+    {
+      "plugin": "report_18_manifold_embedding",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\topological_manifold_map.png"
+      ],
+      "elapsed": 4.4643096923828125
+    },
+    {
+      "plugin": "report_19_same_object_phase_scatter",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_orbital_vs_orbital_radius.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_luminosity_vs_stellar_colour.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_orbital_radius_vs_orbital_mass.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_vs_stellar_luminosity.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_kinematic_vs_stellar_colour.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_orbital_vs_orbital_mass.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_vs_stellar_colour.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_kinematic_vs_stellar_luminosity.png"
+      ],
+      "elapsed": 107.97774887084961
+    },
+    {
+      "plugin": "report_20_global_ledger",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\global_ledger_master.png"
+      ],
+      "elapsed": 0.5491063594818115
+    }
+  ],
+  "files": [
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\scatter_biology_backbone.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\scatter_subnuclear_mass.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\scatter_orbital_ttv.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\bridge_map_full.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\histogram_biology_backbone.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\histogram_subnuclear_mass.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\histogram_orbital_ttv.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\histogram_planetary_pacific.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\power_analysis_table.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\batch_stability_violin.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_seismic_japan.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_stellar_rotation.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_stellar_kinematic.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_biology_backbone.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_orbital_ttv.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\wrongbox_delta_subnuclear_mass.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\register_spectrum_full.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\subnuclear_resonance_map.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\floor_smear_biology_backbone.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\floor_smear_subnuclear_mass.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\floor_smear_orbital_ttv.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\floor_smear_planetary_pacific.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\principle_stellar_proof.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\principle_orbital_proof.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\seismic_sovereign_falsification.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\distance_matrix_heatmap.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\null_confidence_curves.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\register_taxonomy_matrix.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\artifact_falsification.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\cross_scale_bridge.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\topological_manifold_map.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_orbital_vs_orbital_radius.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_luminosity_vs_stellar_colour.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_orbital_radius_vs_orbital_mass.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_vs_stellar_luminosity.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_kinematic_vs_stellar_colour.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_orbital_vs_orbital_mass.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_vs_stellar_colour.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\phase_scatter_stellar_kinematic_vs_stellar_luminosity.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260604_014531\\global_ledger_master.png"
+  ]
+}

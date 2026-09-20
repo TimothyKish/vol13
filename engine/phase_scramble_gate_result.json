@@ -1,0 +1,20 @@
+{
+  "s2_stellar_kinematics": {
+    "real_z": 97.44503583992645,
+    "test_N": 16,
+    "surr_mean_z": 227.4030463694927,
+    "surr_std_z": 16.896560285576722,
+    "surr_max_z": 281.2637434371708,
+    "status": "FAILED"
+  },
+  "b5_pdb_protein": {
+    "status": "INCONCLUSIVE",
+    "real_z": 53.997195434712026
+  },
+  "p1_orbital_periods": {
+    "status": "MISMATCH_HALT",
+    "configured_N": 15,
+    "peak_N": 22,
+    "peak_z": 27.99245728897973
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "stellar_kinematic": {
+    "configured_N": 16,
+    "z_at_configured": 97.44503583992645,
+    "peak_N": 16,
+    "peak_z": 97.44503583992645,
+    "mismatch": false,
+    "strong_at_configured": true,
+    "strong_at_peak": true
+  },
+  "biology_backbone": {
+    "configured_N": 25,
+    "z_at_configured": 53.997195434712026,
+    "peak_N": 25,
+    "peak_z": 53.997195434712026,
+    "mismatch": false,
+    "strong_at_configured": true,
+    "strong_at_peak": true
+  },
+  "orbital": {
+    "configured_N": 15,
+    "z_at_configured": 7.85584596796444,
+    "peak_N": 22,
+    "peak_z": 27.99245728897973,
+    "mismatch": true,
+    "strong_at_configured": true,
+    "strong_at_peak": true
+  }
+}

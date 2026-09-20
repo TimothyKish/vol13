@@ -1,0 +1,345 @@
+{
+  "L_comprehensive_master": {
+    "support": {
+      "n": 2000000,
+      "raw_span": 15.017258175896414,
+      "eff_span": 4.3433133670701025,
+      "tail_fraction": 0.01,
+      "inflation": 3.4575580683985288,
+      "verdict": "SPARSE-TAIL-ARTIFACT",
+      "raw_min": -12.942356717749728,
+      "raw_max": 2.074901458146685,
+      "eff_lo": -2.802788499970538,
+      "eff_hi": 1.5405248670995642
+    },
+    "shape": "SPIKED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "sampled": true
+  },
+  "L_emission_nist": {
+    "support": {
+      "n": 189330,
+      "raw_span": 23.041662786718668,
+      "eff_span": 6.768321643719389,
+      "tail_fraction": 0.01000369724819099,
+      "inflation": 3.404339214301377,
+      "verdict": "SPARSE-TAIL-ARTIFACT",
+      "raw_min": 15.383434404540672,
+      "raw_max": 38.42509719125934,
+      "eff_lo": 30.47397394044132,
+      "eff_hi": 37.24229558416071
+    },
+    "shape": "SPIKED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "sampled": false
+  },
+  "L_pulsar_spin": {
+    "support": {
+      "n": 2527,
+      "raw_span": 9.041341700154366,
+      "eff_span": 8.365448421739886,
+      "tail_fraction": 0.010288880094974277,
+      "inflation": 1.0807958216152511,
+      "verdict": "SUPPORT-OK",
+      "raw_min": -2.4671650610918388,
+      "raw_max": 6.574176639062527,
+      "eff_lo": -2.0832127579790183,
+      "eff_hi": 6.282235663760868
+    },
+    "shape": "FILLED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "sampled": false
+  },
+  "L_q5_decay": {
+    "support": {
+      "n": 3205,
+      "raw_span": 125.3773012810872,
+      "eff_span": 106.87491428648207,
+      "tail_fraction": 0.010608424336973479,
+      "inflation": 1.1731218885005028,
+      "verdict": "SUPPORT-OK",
+      "raw_min": -50.806735073751916,
+      "raw_max": 74.57056620733528,
+      "eff_lo": -47.92694614670574,
+      "eff_hi": 58.94796813977632
+    },
+    "shape": "SPIKED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "sampled": false
+  },
+  "L_universal_angular": {
+    "support": {
+      "n": 270162,
+      "raw_span": 65.69177978720663,
+      "eff_span": 56.22234662988574,
+      "tail_fraction": 0.009646064213323858,
+      "inflation": 1.1684282803003332,
+      "verdict": "SUPPORT-OK",
+      "raw_min": -27.266682595947294,
+      "raw_max": 38.42509719125934,
+      "eff_lo": -18.9923380269246,
+      "eff_hi": 37.23000860296114
+    },
+    "shape": "SPIKED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "sampled": false
+  },
+  "L_universal_energy": {
+    "support": {
+      "n": 669605,
+      "raw_span": 44.16007801170177,
+      "eff_span": 26.689703026069164,
+      "tail_fraction": 0.010002912164634375,
+      "inflation": 1.6545735997350146,
+      "verdict": "TAIL-INFLATED",
+      "raw_min": -17.735693244185402,
+      "raw_max": 26.424384767516372,
+      "eff_lo": -1.4657715963132671,
+      "eff_hi": 25.223931429755897
+    },
+    "shape": "TAIL-INFLATED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21
+    ],
+    "sampled": false
+  },
+  "L_universal_length": {
+    "support": {
+      "n": 2000000,
+      "raw_span": 67.14664627739708,
+      "eff_span": 19.68668881264488,
+      "tail_fraction": 0.0099945,
+      "inflation": 3.4107638372517157,
+      "verdict": "SPARSE-TAIL-ARTIFACT",
+      "raw_min": -17.569046814083755,
+      "raw_max": 49.57759946331332,
+      "eff_lo": 26.519219380669348,
+      "eff_hi": 46.20590819331423
+    },
+    "shape": "SPIKED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "sampled": true
+  },
+  "L_universal_mass": {
+    "support": {
+      "n": 1843276,
+      "raw_span": 26.75617061631931,
+      "eff_span": 9.40013455327177,
+      "tail_fraction": 0.009997960153552697,
+      "inflation": 2.846360386086886,
+      "verdict": "TAIL-INFLATED",
+      "raw_min": 69.93043272710194,
+      "raw_max": 96.68660334342125,
+      "eff_lo": 86.87963021962125,
+      "eff_hi": 96.27976477289302
+    },
+    "shape": "SPIKED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "sampled": false
+  },
+  "L_universal_time": {
+    "support": {
+      "n": 351384,
+      "raw_span": 125.3773012810872,
+      "eff_span": 18.50244299814927,
+      "tail_fraction": 0.009940691664959133,
+      "inflation": 6.776256589123297,
+      "verdict": "SPARSE-TAIL-ARTIFACT",
+      "raw_min": -50.806735073751916,
+      "raw_max": 74.57056620733528,
+      "eff_lo": 0.5187431831129876,
+      "eff_hi": 19.02118618126226
+    },
+    "shape": "SPIKED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "sampled": false
+  },
+  "L_universal_topology": {
+    "support": {
+      "n": 2000000,
+      "raw_span": 7.495541943884255,
+      "eff_span": 4.705580971920004,
+      "tail_fraction": 0.0096965,
+      "inflation": 1.592904678213596,
+      "verdict": "TAIL-INFLATED",
+      "raw_min": -2.3025850929940455,
+      "raw_max": 5.19295685089021,
+      "eff_lo": 0.47000362924573563,
+      "eff_hi": 5.17558460116574
+    },
+    "shape": "TAIL-INFLATED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "sampled": true
+  },
+  "L_universal_velocity": {
+    "support": {
+      "n": 2000000,
+      "raw_span": 42.840764753673874,
+      "eff_span": 22.719109952338528,
+      "tail_fraction": 0.01,
+      "inflation": 1.88567091068038,
+      "verdict": "TAIL-INFLATED",
+      "raw_min": -21.440536666840686,
+      "raw_max": 21.400228086833188,
+      "eff_lo": -2.215180722286716,
+      "eff_hi": 20.503929230051813
+    },
+    "shape": "SPIKED",
+    "resolvable": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "sampled": true
+  }
+}

@@ -1,0 +1,34 @@
+\contentsline {section}{\numberline {1}Introduction and Purpose of Pre-Registration}{3}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Why This Pre-Registration Is Necessary}{3}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}Reproducibility Standard}{3}{subsection.1.2}%
+\contentsline {section}{\numberline {2}Theoretical Basis: The Same-Object Principle}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}The Kish Clutch and Register Families}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}The Same-Object Principle}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}The Falsifiability Power of Same-Object Multi-Attribute Tests}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Pre-Registered Predictions: Gaia DR3 Stellar Pool Extension}{5}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Object Pool Definition}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}New Lake Predictions}{5}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Rationale for Each Prediction}{6}{subsection.3.3}%
+\contentsline {paragraph}{s5 --- Proper motion (kinematic):}{6}{subsection.3.3}%
+\contentsline {paragraph}{s6 --- Effective temperature (EM/thermal):}{6}{subsection.3.3}%
+\contentsline {paragraph}{s7 --- Surface gravity (structural):}{6}{subsection.3.3}%
+\contentsline {paragraph}{s8 --- Metallicity (quantum/chemical):}{6}{subsection.3.3}%
+\contentsline {paragraph}{s9 --- 3D space velocity (kinematic):}{7}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Pre-Registered Predictions: Other Object Pools}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}ATNF Pulsar Catalog --- Multi-Attribute Extension}{7}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}NASA Exoplanet Archive --- Multi-Attribute Extension}{7}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}CERN Di-Muon --- Multi-Attribute Extension}{8}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}SDSS DR16 Galaxies --- Multi-Attribute Extension}{8}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Dimensionality Falsification Protocol}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}The Scalarization Framework and Its Physical Meaning}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}The Empirical Precedent: The Materials Domain Collapse}{9}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Why This Test Is Scientifically Critical}{10}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Orthogonal Null Targets and Predictions}{10}{subsection.5.4}%
+\contentsline {paragraph}{Orthogonal Null 1: Gaia Radial Velocity (s2\_wrong)}{10}{subsection.5.4}%
+\contentsline {paragraph}{Orthogonal Null 2: ATNF Pulsar Spin Period (k2\_wrong)}{11}{subsection.5.4}%
+\contentsline {paragraph}{Orthogonal Null 3: Exoplanet Orbital Period (p1\_wrong)}{11}{subsection.5.4}%
+\contentsline {paragraph}{Orthogonal Null 4: Materials Domain Formal Documentation}{12}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Summary Table: Orthogonal Null Pre-Registrations}{12}{subsection.5.5}%
+\contentsline {section}{\numberline {6}Complete Predictions Register}{12}{section.6}%
+\contentsline {section}{\numberline {7}Falsification Conditions}{14}{section.7}%
+\contentsline {section}{\numberline {8}One-Lane Discipline: Why Sovereign Lakes Are Non-Negotiable}{14}{section.8}%

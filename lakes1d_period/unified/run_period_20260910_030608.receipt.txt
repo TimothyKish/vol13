@@ -1,0 +1,6 @@
+KishLattice PERIOD Engine Run Receipt
+================================================
+engine_version_period: e7d91acd7433fa08f5f1882d520aec69f06b9d5abf4fbc9d73a8ab60424c412ac4d3b7467086c3729c65454008cae87fcc2a582a39ad91aba6c6b2269338c1a9
+completed_utc: 2026-09-10T04:00:36Z
+total_runtime_s: 3267.8
+support gate: MANDATORY (effective-span resolution)

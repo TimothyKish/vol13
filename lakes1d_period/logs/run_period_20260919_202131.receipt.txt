@@ -1,0 +1,9 @@
+KishLattice PERIOD Engine Run Receipt
+================================================
+engine_version_period: e7d91acd7433fa08f5f1882d520aec69c5038140da633734f9986753615f96fe8f5eacc938f972d135ec481b861d424ab686de6f8f91ea0e25e464b060f01f16cc2a582a39ad91aba6c6b2269338c1a9
+completed_utc: 2026-09-19T20:31:20Z
+total_runtime_s: 588.4
+resources: resources: 20 core(s), 19 worker(s), GPU: none (CPU only)   [rabbit]   sample cap: 2,000,000
+sample_cap: 2000000
+log: run_period_20260919_202131.log
+support gate: MANDATORY (effective-span resolution)

@@ -1,0 +1,98 @@
+\contentsline {chapter}{Preface: What Volume 13 Fixes Before It Builds}{5}{chapter*.2}%
+\contentsline {chapter}{\numberline {1}The Resolution Criterion as a Law of the Survey}{6}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Restating the Criterion}{6}{section.1.1}%
+\contentsline {section}{\numberline {1.2}The Census}{7}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Effective Span, and Why Min--Max Inflates}{8}{section.1.3}%
+\contentsline {section}{\numberline {1.4}The Near-Node Fallacy}{8}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Register Movement Under the Corrected Statistic}{9}{section.1.5}%
+\contentsline {chapter}{\numberline {2}The Aperture, Formalised}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Two Knobs, Restated as Instrument Parameters}{10}{section.2.1}%
+\contentsline {chapter}{\numberline {3}The Hunt for $f$: an Audit of the Theory}{11}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Why the Empirical Audit Reached Into the Theory}{11}{section.3.1}%
+\contentsline {section}{\numberline {3.2}The Lattice Energy Expression and the Undefined Parameter}{11}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Deriving $f$: From Named Parameter to Four-Dimensional Potential}{13}{chapter.4}%
+\contentsline {section}{\numberline {4.1}The Parameter That Was Never Defined}{13}{section.4.1}%
+\contentsline {section}{\numberline {4.2}The One Postulate That Fixes It}{13}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Gauss's law in four spatial dimensions}{14}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}The coupling}{14}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}What the Derivation Costs}{15}{section.4.3}%
+\contentsline {section}{\numberline {4.4}$\ell _{\mathrm {cell}}$ Is a Postulate, Not a Result}{15}{section.4.4}%
+\contentsline {section}{\numberline {4.5}The Four Errata the Derivation Produced}{16}{section.4.5}%
+\contentsline {section}{\numberline {4.6}What This Chapter Settles, and What It Does Not}{17}{section.4.6}%
+\contentsline {chapter}{\numberline {5}The Strain Formulation of the Kish Lattice}{18}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Reinterpreting Route 2: Displacement as Local Strain}{18}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Reinterpreting Route 1: The Mode Hierarchy Number ($Q$)}{18}{section.5.2}%
+\contentsline {section}{\numberline {5.3}The Resolved Constraints Table}{19}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Empirical Validation and the Weak-Field Limit}{20}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Textbook Checks in the Solar System Regime}{20}{section.6.1}%
+\contentsline {section}{\numberline {6.2}PPN Absorption and Definitional Recovery}{20}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Superposition and the Tensor Requirement}{21}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Strong-Field Falsification and the Yield Point}{22}{chapter.7}%
+\contentsline {section}{\numberline {7.1}The Elastic Yield Point ($\varepsilon _y$)}{22}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Yield Scenarios and the LIGO / EHT Ringdown Regime}{23}{section.7.2}%
+\contentsline {section}{\numberline {7.3}The Binary Pulsar Falsification (PSR J0737−3039)}{23}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Mandatory Pre-Registration}{24}{section.7.4}%
+\contentsline {chapter}{\numberline {8}Multi-Scale Strain Survey}{25}{chapter.8}%
+\contentsline {section}{\numberline {8.1}The Objective and Methodology}{25}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Quantum, Atomic, and Meso Scales}{25}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Planetary and Stellar Scales (The Linear Regime)}{26}{section.8.3}%
+\contentsline {section}{\numberline {8.4}Galactic, Cosmological, and Strong-Field Regimes (The Yield Boundary)}{26}{section.8.4}%
+\contentsline {section}{\numberline {8.5}Three Features of the Map, and What They Are Not}{27}{section.8.5}%
+\contentsline {chapter}{\numberline {9}Bridging the Disconnected Universe}{28}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Restoring the Medium: What the Framework Does and Does Not Claim}{28}{section.9.1}%
+\contentsline {section}{\numberline {9.2}The Relationship to MOND, Stated Accurately}{28}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Dark Energy: an Open Question, Not an Elimination}{29}{section.9.3}%
+\contentsline {section}{\numberline {9.4}What the Framework Can Presently Be Tested On}{29}{section.9.4}%
+\contentsline {chapter}{\numberline {10}The Strain Survey: Four Honest Runs Under Strict I/O}{31}{chapter.10}%
+\contentsline {section}{\numberline {10.1}The Contract These Runs Enforce}{31}{section.10.1}%
+\contentsline {section}{\numberline {10.2}Planetary --- A Clean Abort}{31}{section.10.2}%
+\contentsline {section}{\numberline {10.3}Cosmological --- An Abort, With the MOND Scale Derived First}{32}{section.10.3}%
+\contentsline {section}{\numberline {10.4}Amino Acids --- The Modulus Sweep Says No}{32}{section.10.4}%
+\contentsline {section}{\numberline {10.5}Black Holes --- What We Ran, What We Saw, and the Rebuild It Requires}{33}{section.10.5}%
+\contentsline {subsection}{\numberline {10.5.1}What we saw}{33}{subsection.10.5.1}%
+\contentsline {subsection}{\numberline {10.5.2}What we determined the cause to be}{33}{subsection.10.5.2}%
+\contentsline {subsection}{\numberline {10.5.3}Why we cannot patch it in this volume}{34}{subsection.10.5.3}%
+\contentsline {subsection}{\numberline {10.5.4}The yield radius, and a flag the engine raised on itself}{34}{subsection.10.5.4}%
+\contentsline {section}{\numberline {10.6}What the Strain Survey Established}{35}{section.10.6}%
+\contentsline {chapter}{\numberline {11}The Roman Predictions and the Rotation Paradox}{36}{chapter.11}%
+\contentsline {section}{\numberline {11.1}The Ad Hoc Halo vs. The Harmonic Container}{36}{section.11.1}%
+\contentsline {section}{\numberline {11.2}Textbook Application: Andromeda (M31)}{36}{section.11.2}%
+\contentsline {section}{\numberline {11.3}Pre-Registered Roman Weak Lensing Boundaries}{37}{section.11.3}%
+\contentsline {chapter}{\numberline {12}Pre-Registration: The Period Engine Trial Set}{39}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Carried Forward From Volume 12}{39}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Trial 2b: Run, and Its Reporting Corrected}{39}{section.12.2}%
+\contentsline {section}{\numberline {12.3}The Trial Set, Current Status}{40}{section.12.3}%
+\contentsline {chapter}{\numberline {13}Pre-Registration: The $s2$ Rebuild}{41}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Why $s2$ Must Be Rebuilt}{41}{section.13.1}%
+\contentsline {section}{\numberline {13.2}The Referee-Approved Rebuild Specification}{41}{section.13.2}%
+\contentsline {chapter}{\numberline {14}The Cross-Scale Stack: an Experiment and Its Falsifier}{42}{chapter.14}%
+\contentsline {section}{\numberline {14.1}The Idea}{42}{section.14.1}%
+\contentsline {section}{\numberline {14.2}Why the Naive Stack Manufactures Its Own Answer}{42}{section.14.2}%
+\contentsline {section}{\numberline {14.3}The Discriminator}{43}{section.14.3}%
+\contentsline {section}{\numberline {14.4}The Four-Gate Protocol}{43}{section.14.4}%
+\contentsline {chapter}{\numberline {15}Standing, and What Volume 13 Commits To}{44}{chapter.15}%
+\contentsline {section}{\numberline {15.1}The Ledger}{44}{section.15.1}%
+\contentsline {section}{\numberline {15.2}The One Fact and the One Question}{45}{section.15.2}%
+\contentsline {section}{\numberline {15.3}Closing}{45}{section.15.3}%
+\contentsline {chapter}{\numberline {16}The Period Engine: Operation, Outputs, and Commands}{46}{chapter.16}%
+\contentsline {section}{\numberline {16.1}What the Period Engine Is, in One Paragraph}{46}{section.16.1}%
+\contentsline {section}{\numberline {16.2}The Pipeline Stages}{46}{section.16.2}%
+\contentsline {subsection}{\numberline {16.2.1}The support stage, and why it is mandatory}{47}{subsection.16.2.1}%
+\contentsline {section}{\numberline {16.3}Running It}{47}{section.16.3}%
+\contentsline {section}{\numberline {16.4}Resource Adaptation: Turtle to Beast, Same Numbers}{47}{section.16.4}%
+\contentsline {section}{\numberline {16.5}Outputs}{48}{section.16.5}%
+\contentsline {section}{\numberline {16.6}The Reporting Suite}{48}{section.16.6}%
+\contentsline {section}{\numberline {16.7}First-Light Result}{48}{section.16.7}%
+\contentsline {chapter}{\numberline {17}The Standing Pre-Registrations}{51}{chapter.17}%
+\contentsline {section}{\numberline {17.1}Order of Work}{52}{section.17.1}%
+\contentsline {chapter}{\numberline {18}The Contribution: An Instrument, Offered}{54}{chapter.18}%
+\contentsline {section}{\numberline {18.1}What Was Actually Built}{54}{section.18.1}%
+\contentsline {section}{\numberline {18.2}Why the Instrument Is a Contribution Even If the Hypothesis Is Wrong}{55}{section.18.2}%
+\contentsline {section}{\numberline {18.3}Learning the Dials Without Tuning Them}{55}{section.18.3}%
+\contentsline {section}{\numberline {18.4}What Is Offered, and to Whom}{56}{section.18.4}%
+\contentsline {chapter}{\numberline {19}The Forward Kinematic Engine: Build, Fallback Defect, and First Honest Runs}{58}{chapter.19}%
+\contentsline {section}{\numberline {19.1}From Spectroscopy to Determinism}{58}{section.19.1}%
+\contentsline {section}{\numberline {19.2}The Fallback Defect, and Its Removal}{59}{section.19.2}%
+\contentsline {section}{\numberline {19.3}What the Honest Runs Returned}{59}{section.19.3}%
+\contentsline {chapter}{References}{62}{chapter*.4}%
+\contentsline {section}{Scientific References}{65}{chapter*.5}%

@@ -1,0 +1,165 @@
+{
+  "run_timestamp": "20260531_213351",
+  "generated_utc": "2026-05-31 21:35:42 UTC",
+  "total_files": 14,
+  "total_elapsed_s": 111.02,
+  "z_score_patches": 0,
+  "plugins": [
+    {
+      "plugin": "report_01_domain_Ramachandran_scatters",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\scatter_biology_backbone.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\scatter_subnuclear_mass.png",
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\scatter_orbital_ttv.png"
+      ],
+      "elapsed": 12.765400409698486
+    },
+    {
+      "plugin": "report_02_bridge_map",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\bridge_map_full.png"
+      ],
+      "elapsed": 0.4902513027191162
+    },
+    {
+      "plugin": "report_02_universal_histograms",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\histogram_biology_backbone.png"
+      ],
+      "elapsed": 24.457740545272827
+    },
+    {
+      "plugin": "report_03_power_analysis",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\power_analysis_table.png"
+      ],
+      "elapsed": 0.24676108360290527
+    },
+    {
+      "plugin": "report_04_batch_stability",
+      "status": "ok",
+      "files": [],
+      "elapsed": 0.0011706352233886719
+    },
+    {
+      "plugin": "report_05_wrongbox_delta",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\wrongbox_delta_biology_backbone.png"
+      ],
+      "elapsed": 0.18412542343139648
+    },
+    {
+      "plugin": "report_06_register_spectrum",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\register_spectrum_full.png"
+      ],
+      "elapsed": 0.26386547088623047
+    },
+    {
+      "plugin": "report_08_subnuclear_dual",
+      "status": "ok",
+      "files": [],
+      "elapsed": 22.64460563659668
+    },
+    {
+      "plugin": "report_09_floor_smear",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\floor_smear_biology_backbone.png"
+      ],
+      "elapsed": 23.94499397277832
+    },
+    {
+      "plugin": "report_10_kinematic_principle",
+      "status": "ok",
+      "files": [],
+      "elapsed": 0.11369085311889648
+    },
+    {
+      "plugin": "report_11_seismic_sovereign",
+      "status": "ok",
+      "files": [],
+      "elapsed": 22.48734712600708
+    },
+    {
+      "plugin": "report_12_pinch_heatmap",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\distance_matrix_heatmap.png"
+      ],
+      "elapsed": 0.5751166343688965
+    },
+    {
+      "plugin": "report_13_null_confidence",
+      "status": "ok",
+      "files": [],
+      "elapsed": 0.9447987079620361
+    },
+    {
+      "plugin": "report_14_register_taxonomy",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\register_taxonomy_matrix.png"
+      ],
+      "elapsed": 0.2429642677307129
+    },
+    {
+      "plugin": "report_16_artifact_falsification",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\artifact_falsification.png"
+      ],
+      "elapsed": 0.22760677337646484
+    },
+    {
+      "plugin": "report_17_cross_scale_bridge",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\cross_scale_bridge.png"
+      ],
+      "elapsed": 0.32354283332824707
+    },
+    {
+      "plugin": "report_18_manifold_embedding",
+      "status": "ok",
+      "files": [],
+      "elapsed": 0.6787431240081787
+    },
+    {
+      "plugin": "report_19_same_object_phase_scatter",
+      "status": "ok",
+      "files": [],
+      "elapsed": 0.001033782958984375
+    },
+    {
+      "plugin": "report_20_global_ledger",
+      "status": "ok",
+      "files": [
+        "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\global_ledger_master.png"
+      ],
+      "elapsed": 0.39149975776672363
+    }
+  ],
+  "files": [
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\scatter_biology_backbone.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\scatter_subnuclear_mass.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\scatter_orbital_ttv.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\bridge_map_full.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\histogram_biology_backbone.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\power_analysis_table.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\wrongbox_delta_biology_backbone.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\register_spectrum_full.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\floor_smear_biology_backbone.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\distance_matrix_heatmap.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\register_taxonomy_matrix.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\artifact_falsification.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\cross_scale_bridge.png",
+    "C:\\Users\\timot\\Downloads\\Science\\src\\Unification\\vol11\\lakes\\figures\\output\\run_20260531_213351\\global_ledger_master.png"
+  ]
+}

@@ -1,0 +1,254 @@
+KishLattice Pipeline Run Log
+============================================================
+run_timestamp:   20260816_195207
+vol_root:        C:\Users\timot\Downloads\Science\src\Unification\vol12
+engine_version:  60504f82a7f9acac4b6abd8c3791d871c78cb29cd07bf67abd2b4a5260366c03d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db37349aeee510813629aad885a0dbf1421552dd3ec6479d5746da036d80b161407982
+stages:          scalarize, unify, chaos, pinch
+started_utc:     2026-08-16 19:52:17 UTC
+============================================================
+
+
+============================================================
+[2026-08-16 19:52:17 UTC] STAGE: SCALARIZE
+Transform promoted lakes into scalar space
+============================================================
+[scalarize.json] Loaded config for 2 domains.
+
+============================================================
+  [MONITORING TIP] Open a new terminal and run:
+  python engine/sidecar.py
+  to view the live byte-streaming progress dashboard.
+============================================================
+
+Scalarizing L_emission_nist: L_emission_nist_promoted.jsonl -> L_emission_nist_scalarized.jsonl (mode=geometry)
+Scalarizing s2_stellar_kinematics: s2_stellar_kinematics_promoted.jsonl -> s2_stellar_kinematics_scalarized.jsonl (mode=geometry)
+
+[2026-08-16 19:52:45 UTC] STAGE COMPLETE: scalarize in 27s
+
+============================================================
+[2026-08-16 19:52:45 UTC] STAGE: UNIFY
+Stream all scalarized lakes into unified master
+============================================================
+C:\Users\timot\Downloads\Science\src\Unification\vol12\engine\unify.py:94: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  start_time = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')
+C:\Users\timot\Downloads\Science\src\Unification\vol12\engine\unify.py:168: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  now = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')
+
+============================================================
+  [MONITORING TIP] Open a new terminal and run:
+  python engine/sidecar.py
+  to view the live unified streaming dashboard.
+============================================================
+
+Volumes: 2 total, 2 enabled, 0 disabled
+
+[2026-08-16 19:52:45 UTC] Pipeline run started.
+
+  [L_emission_nist] domain=quantum_transitional  n=189,330  nonzero=189,330
+    [2026-08-16 19:52:49 UTC] 250,000 records streamed from s2_stellar_kinematics...
+    [2026-08-16 19:52:53 UTC] 500,000 records streamed from s2_stellar_kinematics...
+    [2026-08-16 19:52:56 UTC] 750,000 records streamed from s2_stellar_kinematics...
+    [2026-08-16 19:52:59 UTC] 1,000,000 records streamed from s2_stellar_kinematics...
+    [2026-08-16 19:53:03 UTC] 1,250,000 records streamed from s2_stellar_kinematics...
+    [2026-08-16 19:53:06 UTC] 1,500,000 records streamed from s2_stellar_kinematics...
+    [2026-08-16 19:53:09 UTC] 1,750,000 records streamed from s2_stellar_kinematics...
+C:\Users\timot\Downloads\Science\src\Unification\vol12\engine\unify.py:179: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  end_time = datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')
+  [s2_stellar_kinematics] domain=stellar_kinematic  n=1,808,145  nonzero=1,808,145
+
+[2026-08-16 19:53:10 UTC] Run complete.
+  Total runtime:   0h 0m 24s
+  Total records:   1,997,475
+  Lakes processed: 2
+  Throughput:      80,130 records/sec (average)
+  Master checksum: 6bdf251ab707e3ac463a8d7e1857243f
+  Checksum saved:  C:\Users\timot\Downloads\Science\src\Unification\vol12\lakes\unified\unified_master.jsonl.md5
+
+Unified master written: C:\Users\timot\Downloads\Science\src\Unification\vol12\lakes\unified\unified_master.jsonl
+Sweep results written:  C:\Users\timot\Downloads\Science\src\Unification\vol12\lakes\unified\sweep_results.json
+Pinch table written:    C:\Users\timot\Downloads\Science\src\Unification\vol12\lakes\unified\pinch_table.json
+
+Domain summary:
+  Domain                          n    nonzero     mean range
+  -----------------------------------------------------------------
+  quantum_transitional      189,330    189,330  20.6754 [9.4501, 23.6047]
+  stellar_kinematic       1,808,145  1,808,145   1.0930 [-0.1935, 4.4446]
+
+[2026-08-16 19:53:10 UTC] STAGE COMPLETE: unify in 24s
+
+[2026-08-16 19:53:10 UTC] CHECKSUM: computing MD5 of unified_master.jsonl
+  Checksum:      5389b4091f34394cc3af8e10bc595aa1
+  Bytes:         1,843,744,186
+  Computed in:   2s
+  Written to:    lakes\unified\unified_master.jsonl.md5
+
+============================================================
+[2026-08-16 19:53:12 UTC] STAGE: CHAOS
+Build chaos null distributions per domain
+============================================================
+[harmonic_targets.json] Loaded 23 registers (N=4 to N=26), container=24, threshold=0.05
+
+============================================================
+  [MONITORING TIP] Open a new terminal and run:
+  python engine/sidecar.py
+  to view the live null generation dashboard.
+============================================================
+
+NOTE: This job builds null distributions for all domains.
+      Runtime: Dependent on lake sizes. Do not interrupt.
+
+k_geo = 16/pi = 5.0929581789
+Volume number: 11
+Registers (23): 4/pi=1.273240  5/pi=1.591549  6/pi=1.909859  7/pi=2.228169  8/pi=2.546479  9/pi=2.864789  10/pi=3.183099  11/pi=3.501409  12/pi=3.819719  13/pi=4.138029  14/pi=4.456338  15/pi=4.774648  16/pi=5.092958  17/pi=5.411268  18/pi=5.729578  19/pi=6.047888  20/pi=6.366198  21/pi=6.684508  22/pi=7.002817  23/pi=7.321127  24/pi=7.639437  25/pi=7.957747  26/pi=8.276057
+
+Loading unified master...
+
+Found 2 domain slots:
+  quantum_transitional         n=189330  mean=20.6754  range=[9.4501, 23.6047]
+  stellar_kinematic            n=1808145  mean=1.0930  range=[-0.1935, 4.4446]
+
+Building null lakes...
+
+[quantum_transitional]  n=189330
+  4/pi: real=0.0935  chaos=0.0998  synth=0.1010  delta=-0.0063
+  5/pi: real=0.0987  chaos=0.0997  synth=0.0996  delta=-0.0010
+  6/pi: real=0.0914  chaos=0.0996  synth=0.1011  delta=-0.0082
+  7/pi: real=0.1052  chaos=0.1009  synth=0.1009  delta=+0.0043
+  8/pi: real=0.1021  chaos=0.0990  synth=0.1000  delta=+0.0031
+  9/pi: real=0.0945  chaos=0.0985  synth=0.0995  delta=-0.0040
+  10/pi: real=0.0892  chaos=0.0990  synth=0.1002  delta=-0.0099
+  11/pi: real=0.0883  chaos=0.1010  synth=0.0995  delta=-0.0127
+  12/pi: real=0.0927  chaos=0.0994  synth=0.1008  delta=-0.0067
+  13/pi: real=0.0891  chaos=0.0998  synth=0.1000  delta=-0.0107
+  14/pi: real=0.1079  chaos=0.1015  synth=0.1011  delta=+0.0064 ** above chaos **
+  15/pi: real=0.0990  chaos=0.1000  synth=0.0993  delta=-0.0009
+  16/pi: real=0.1204  chaos=0.1003  synth=0.0996  delta=+0.0201 ** above chaos **
+  17/pi: real=0.0908  chaos=0.0998  synth=0.0993  delta=-0.0090
+  18/pi: real=0.0819  chaos=0.0989  synth=0.0999  delta=-0.0170
+  19/pi: real=0.0917  chaos=0.0996  synth=0.1018  delta=-0.0078
+  20/pi: real=0.0926  chaos=0.0998  synth=0.1007  delta=-0.0072
+  21/pi: real=0.1005  chaos=0.1011  synth=0.1000  delta=-0.0006
+  22/pi: real=0.0956  chaos=0.0989  synth=0.1000  delta=-0.0033
+  23/pi: real=0.1165  chaos=0.1004  synth=0.1000  delta=+0.0161 ** above chaos **
+  24/pi: real=0.0955  chaos=0.1019  synth=0.1004  delta=-0.0064
+  25/pi: real=0.1098  chaos=0.0996  synth=0.1000  delta=+0.0101 ** above chaos **
+  26/pi: real=0.0960  chaos=0.1003  synth=0.0993  delta=-0.0042
+  -> chaos_null_quantum_transitional.jsonl
+  -> scramble_null_quantum_transitional.jsonl
+  -> synthetic_null_quantum_transitional.jsonl
+
+[stellar_kinematic]  n=1808145
+  4/pi: real=0.0915  chaos=0.0951  synth=0.0817  delta=-0.0036
+  5/pi: real=0.0955  chaos=0.0956  synth=0.0840  delta=-0.0000
+  6/pi: real=0.0920  chaos=0.0944  synth=0.0815  delta=-0.0025
+  7/pi: real=0.0776  chaos=0.0940  synth=0.0813  delta=-0.0163
+  8/pi: real=0.0885  chaos=0.0937  synth=0.0811  delta=-0.0052
+  9/pi: real=0.0778  chaos=0.0954  synth=0.0809  delta=-0.0176
+  10/pi: real=0.0744  chaos=0.0946  synth=0.0810  delta=-0.0202
+  11/pi: real=0.0822  chaos=0.0941  synth=0.0805  delta=-0.0118
+  12/pi: real=0.1104  chaos=0.0926  synth=0.0805  delta=+0.0178 ** above chaos **
+  13/pi: real=0.0844  chaos=0.0931  synth=0.0803  delta=-0.0086
+  14/pi: real=0.0788  chaos=0.0919  synth=0.0803  delta=-0.0131
+  15/pi: real=0.1139  chaos=0.0943  synth=0.0801  delta=+0.0196 ** above chaos **
+  16/pi: real=0.1116  chaos=0.0915  synth=0.0798  delta=+0.0201 ** above chaos **
+  17/pi: real=0.0899  chaos=0.0923  synth=0.0794  delta=-0.0024
+  18/pi: real=0.0845  chaos=0.0926  synth=0.0795  delta=-0.0081
+  19/pi: real=0.0812  chaos=0.0923  synth=0.0791  delta=-0.0111
+  20/pi: real=0.0790  chaos=0.0919  synth=0.0795  delta=-0.0129
+  21/pi: real=0.0768  chaos=0.0908  synth=0.0814  delta=-0.0139
+  22/pi: real=0.0754  chaos=0.0942  synth=0.0789  delta=-0.0188
+  23/pi: real=0.0749  chaos=0.0916  synth=0.0790  delta=-0.0168
+  24/pi: real=0.0725  chaos=0.0900  synth=0.0808  delta=-0.0175
+  25/pi: real=0.0726  chaos=0.0930  synth=0.0789  delta=-0.0203
+  26/pi: real=0.0705  chaos=0.0894  synth=0.0784  delta=-0.0189
+  -> chaos_null_stellar_kinematic.jsonl
+  -> scramble_null_stellar_kinematic.jsonl
+  -> synthetic_null_stellar_kinematic.jsonl
+
+All null lakes written to: C:\Users\timot\Downloads\Science\src\Unification\vol12\lakes\synthetic
+
+Next steps:
+  1. python engine/build_pinch_table.py
+
+[2026-08-16 19:55:12 UTC] STAGE COMPLETE: chaos in 1m 59s
+
+============================================================
+[2026-08-16 19:55:12 UTC] STAGE: PINCH
+Compute z-scores and cross-domain pinch table
+============================================================
+[harmonic_targets.json] Loaded 23 registers (N=4 to N=26), container=24, threshold=0.05
+
+============================================================
+  [MONITORING TIP] Open a new terminal and run:
+  python engine/sidecar.py
+  to view the live parallel crunching dashboard.
+============================================================
+
+Loading unified master: C:\Users\timot\Downloads\Science\src\Unification\vol12\lakes\unified\unified_master.jsonl
+  Loading records into memory. Please wait...
+    -> Parsed 453,234 records...
+    -> Parsed 746,806 records...
+    -> Parsed 987,298 records...
+    -> Parsed 1,229,056 records...
+    -> Parsed 1,466,357 records...
+    -> Parsed 1,697,476 records...
+    -> Parsed 1,922,335 records...
+
+  Finished loading 1,997,475 total records.
+  Compressing to 32-bit Numpy Arrays for Memory-Safe IPC...
+
+Building pinch table in PARALLEL mode...
+
+  Loading Chaos Nulls into memory...
+  Finished loading Chaos Nulls.
+  Loading Synthetic Nulls into memory...
+  Finished loading Synthetic Nulls.
+Total Combinations: 46 | Remaining: 46
+
+Saved: C:\Users\timot\Downloads\Science\src\Unification\vol12\lakes\unified\pinch_table_cross_domain.json
+
+===================================================================================================================
+                                              CROSS-DOMAIN PINCH TABLE                                             
+Moduli: 4/pi=1.2732  5/pi=1.5915  6/pi=1.9099  7/pi=2.2282  8/pi=2.5465  9/pi=2.8648  10/pi=3.1831  11/pi=3.5014  12/pi=3.8197  13/pi=4.1380  14/pi=4.4563  15/pi=4.7746  16/pi=5.0930  17/pi=5.4113  18/pi=5.7296  19/pi=6.0479  20/pi=6.3662  21/pi=6.6845  22/pi=7.0028  23/pi=7.3211  24/pi=7.6394  25/pi=7.9577  26/pi=8.2761
+                                  dist_lock (1=perfect) | Winner + best chaos_delta per pairing                                   
+===================================================================================================================
+Domain                          quantum_transitional                 stellar_kinematic          
+------------------------------------------------------------------------------------------------
+quantum_transitional                     -                      (0.464,0.510,0.546) d-0.108     
+stellar_kinematic           (0.464,0.510,0.546) d+0.001                      -                  
+
+--- WINNER PER PAIRING ---
+  quantum_transitional x stellar_kinematic: 26/pi  score=0.7409  chaos_delta=-0.1085
+
+--- PER-DOMAIN DUAL Z-SCORES (Chaos | Synthetic) ---
+  Domain                           4/pi       5/pi       6/pi       7/pi       8/pi       9/pi      10/pi      11/pi      12/pi      13/pi      14/pi      15/pi      16/pi      17/pi      18/pi      19/pi      20/pi      21/pi      22/pi      23/pi      24/pi      25/pi      26/pi   Best   Interpretation
+  -------------------------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ----------  ------  --------------------
+     1  quantum_transitional              189,330  computing...  ETA: estimating...
+     1  quantum_transitional    189,330 | -9.0|-9.4 -1.6|-3.1 -12.3|-11.7  7.5|7.5   3.4|3.2  -7.7|-8.5 -15.7|-16.9 -21.7|-17.7 -10.4|-9.9 -18.3|-16.6  9.2|13.0 -1.2|-1.2 28.5|27.0 -13.0|-12.6 -25.5|-23.1 -12.7|-11.1 -10.5|-12.7  0.1|1.0  -5.0|-6.4 23.0|22.9 -7.5|-6.7 12.9|16.7 -6.3|-5.9  16/pi   STRONG signal
+     2  stellar_kinematic               1,808,145  computing...  ETA: 17s
+     2  stellar_kinematic      1,808,145 | -15.9|48.9  0.6|59.1 -11.8|61.6 -78.1|-20.7 -24.3|45.1 -78.1|-15.3 -77.9|-36.3 -56.7|7.3  77.8|156.1 -37.7|21.6 -63.1|-6.7 93.1|186.9 92.1|155.1 -11.6|48.8 -38.9|28.1 -53.1|8.4  -60.3|-1.2 -54.3|-23.7 -91.9|-18.4 -87.6|-18.1 -87.7|-42.7 -94.1|-30.7 -87.8|-47.0  15/pi   STRONG signal
+
+  Z-score stage complete: 2m 52s total  | avg 86.27s per domain  | 172.5s wall time
+
+  [z_scores_master.json written -> C:\Users\timot\Downloads\Science\src\Unification\vol12\lakes\unified\z_scores_master.json]
+
+[2026-08-16 19:58:46 UTC] STAGE COMPLETE: pinch in 3m 34s
+
+============================================================
+[2026-08-16 19:58:46 UTC] PIPELINE COMPLETE
+  Total runtime: 6m 29s
+  Log file:      lakes\logs\run_20260816_195207.log
+
+  Stage summary:
+    [OK]   scalarize    27s
+    [OK]   unify        24s
+    [OK]   chaos        1m 59s
+    [OK]   pinch        3m 34s
+
+  unified_master MD5: 5389b4091f34394cc3af8e10bc595aa1
+  Checksum file:      lakes\unified\unified_master.jsonl.md5
+
+  Engine fingerprint: 60504f82a7f9acac4b6abd8c3791d871c78cb29cd07bf67abd2b4a5260366c03
+                      d5d1612f9caf57d6b0c21459cc7e1a582bf8bbb130a32607dec51771d0db3734
+                      9aeee510813629aad885a0dbf1421552dd3ec6479d5746da036d80b161407982
+============================================================

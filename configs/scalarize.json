@@ -1,0 +1,511 @@
+{
+  "version": "12.0",
+  "k_geo": 5.0929581789,
+  "note": "Vol 12 scalar dispatch. Field paths verified against lake schemas. Includes lake_id-keyed entries for lakes carrying stale record domains.",
+  "__field_syntax__": "Dotted paths address nested payloads, e.g. '_raw_payload.vdisp'. REQUIRES engine/scalarize.py to support dotted resolution - confirm before use.",
+  "formula_types": {
+    "log_standard": "log(1 + x/x0) / log(k_geo)  - standard positive measurement",
+    "log_inverse": "log(1 + x0/x) / log(k_geo)  - inverse (e.g. frequency from period)",
+    "log_ratio": "log(x/x0) / log(k_geo)  - ratio without offset",
+    "log_volumetric": "log(1 + x^3) / log(k_geo)  - 3D volumetric cubic transform",
+    "precomputed": "x  - the lake's stored value IS the KLGHS scalar. Vol 12: declares openly what the legacy fallback previously did silently. Requires a __note__ stating what produced the stored scalar."
+  },
+  "domains": {
+    "quantum_transitional": {
+      "field": "klghs_transition_freq_Hz",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "NIST ASD transition frequency (Hz) - L_emission_nist ANCHOR"
+    },
+    "electron_beta": {
+      "field": "beta_endpoint_kev",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Beta decay endpoint energy (keV)"
+    },
+    "geomagnetic": {
+      "field": "amplitude_nT",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "IGRF geomagnetic amplitude (nT)"
+    },
+    "nuclear_binding": {
+      "field": "binding_energy_mev_per_A",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Binding energy per nucleon (MeV/A)"
+    },
+    "nuclear_decay": {
+      "field": "half_life_seconds",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Nuclear half-life (s)"
+    },
+    "atomic_ionisation": {
+      "field": "ionisation_energy_ev",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Ionisation energy (eV)"
+    },
+    "biology_chirality": {
+      "field": "specific_rotation_deg",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Specific rotation of chiral molecules (deg)"
+    },
+    "biology_amino": {
+      "field": "scalar_klc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Amino acid backbone geometry scalar - B3"
+    },
+    "biology_other": {
+      "field": "scalar_klc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Biological timing scalars - T1"
+    },
+    "planetary_atlantic": {
+      "field": "interval_hours",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Atlantic tidal gap intervals (hr)"
+    },
+    "planetary_gulf": {
+      "field": "interval_hours",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Gulf of Mexico tidal gap intervals (hr)"
+    },
+    "planetary_pacific": {
+      "field": "interval_hours",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Pacific tidal gap intervals (hr)"
+    },
+    "planetary_indian": {
+      "field": "interval_hours",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Indian Ocean tidal gap intervals (hr)"
+    },
+    "seismic_reference": {
+      "field": "interval_days",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Inter-event gap, reference faults U1/U2/U4 (days)"
+    },
+    "seismic_japan": {
+      "field": "interval_days",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Inter-event gap, Japan Trench U3 (days)"
+    },
+    "stellar_cycle": {
+      "field": "interval_days",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Solar cycle length (days) - K3"
+    },
+    "stellar_spindown": {
+      "field": "spin_down_rate",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Pulsar spin-down rate - K2a"
+    },
+    "stellar_dm": {
+      "field": "dispersion_measure",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Pulsar dispersion measure - K2b"
+    },
+    "stellar_age": {
+      "field": "characteristic_age_yr",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Pulsar characteristic age (yr) - K2c"
+    },
+    "stellar_bfield": {
+      "field": "surface_b_field_gauss",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Pulsar surface B field (G) - K2d"
+    },
+    "subnuclear_mass": {
+      "field": "invariant_mass_gev",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Di-muon invariant mass (GeV)"
+    },
+    "subnuclear_pt_lead": {
+      "field": "muon1_pt_gev",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Leading muon pT (GeV)"
+    },
+    "subnuclear_pt_sublead": {
+      "field": "muon2_pt_gev",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Sub-leading muon pT (GeV)"
+    },
+    "subnuclear_eta": {
+      "field": "muon1_eta_abs",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Muon |eta|"
+    },
+    "galactic_sersic": {
+      "field": "sersic_index",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Galaxy Sersic index proxy",
+      "__note__": "Range [0,1] in lake; Sersic indices normally ~0.5-8. Confirm this is the intended quantity."
+    },
+    "galactic_mass": {
+      "field": "stellar_mass_solar",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Galaxy stellar mass (Msun)"
+    },
+    "cmb_anisotropy": {
+      "field": "delta_T_uK",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "CMB temperature anisotropy (uK)"
+    },
+    "gravitational_wave": {
+      "field": "f_ring_hz",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "GW ringdown frequency (Hz)"
+    },
+    "orbital_ttv": {
+      "field": "ttv_absolute_minutes",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Absolute transit timing variation (min)"
+    },
+    "orbital_eccentricity": {
+      "field": "eccentricity",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Orbital eccentricity"
+    },
+    "orbital_inclination": {
+      "field": "inclination_deg",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Orbital inclination (deg)"
+    },
+    "orbital_transit": {
+      "field": "transit_duration_hr",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Transit duration (hr)"
+    },
+    "mechanics": {
+      "field": "scalar_klc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "N1 mechanical null",
+      "__note__": "Lake returns constant zero."
+    },
+    "behavior": {
+      "field": "scalar_klc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "N2 behavioural null",
+      "__note__": "Lake returns constant zero."
+    },
+    "mathematics": {
+      "field": "scalar_klc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "N3 mathematical null",
+      "__note__": "Lake returns constant zero."
+    },
+    "cosmology_null": {
+      "field": "scalar_klc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "N4 cosmological null",
+      "__note__": "De-pooled from real cosmology. Values [2.32,2.60], NOT zero like N1-N3. Inconsistent null family - needs ruling."
+    },
+    "astrophysics": {
+      "field": "_raw_payload.dm_exc_ne2001",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "FRB DM excess NE2001 - frb_chime",
+      "__note__": "RESOLVED nested."
+    },
+    "galactic": {
+      "field": "_raw_payload.vdisp",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Galaxy velocity dispersion (km/s) - G1",
+      "__note__": "RESOLVED nested. Lake has sector_normalized=true; scalar_klc is sector-shifted. Confirm which value the engine consumes."
+    },
+    "stellar": {
+      "field": "_raw_payload.dist_pc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Stellar distance (pc) - S1",
+      "__note__": "RESOLVED nested. Lake has sector_normalized=true."
+    },
+    "stellar_kinematic": {
+      "field": "meta.val_raw_kms",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Stellar transverse velocity (km/s) - S2",
+      "__note__": "RESOLVED. Vol11 'v_perp' does not exist in this lake at any depth; sister config was correct. Lake has sector_normalized=true and regression mean matched meta.global_mean exactly - see audit item 1."
+    },
+    "stellar_colour": {
+      "field": "meta.source_row._raw_payload.bp_rp",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Gaia BP-RP colour index - S4",
+      "__note__": "RESOLVED nested (2 levels)."
+    },
+    "stellar_rotation_kepler": {
+      "field": "meta.prot_days",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Kepler rotation period (days) - K1",
+      "__note__": "RESOLVED. Use meta.prot_days (float). _raw_payload.prot_days is a STRING and would need casting."
+    },
+    "stellar_rotation_pulsar": {
+      "field": "_raw_payload.p0_ms",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Pulsar rotation period (ms) - K2",
+      "__note__": "RESOLVED. Confirms Vol11 defect: Vol11 asked pooled 'stellar_rotation' for 'period_days', absent here. Vol11 stellar_rotation was Kepler-only."
+    },
+    "orbital": {
+      "field": "_raw_payload.period_days",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Exoplanet orbital period (days) - P1",
+      "__note__": "RESOLVED nested."
+    },
+    "orbital_radius": {
+      "field": "meta.source_row._raw_payload.pl_orbsmax",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Orbital semi-major axis (AU) - P2",
+      "__note__": "RESOLVED nested (2 levels). Config previously asked 'pl_orbsmax_AU'; actual key has no _AU suffix."
+    },
+    "orbital_mass": {
+      "field": "meta.source_row._raw_payload.pl_bmassj",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Planet mass (Mjup) - P3",
+      "__note__": "RESOLVED nested (2 levels). Config previously asked 'pl_bmassj_Mj'."
+    },
+    "quantum_molecular_vibration": {
+      "field": "_raw_payload.frequency_cm1",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Vibrational frequency (cm^-1) - Q3",
+      "__note__": "RESOLVED nested."
+    },
+    "molecular_c60": {
+      "field": "frequency_cm1",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "C60 vibrational frequency (cm^-1) - Q9",
+      "__note__": "RESOLVED. Flat schema, no payload wrapper. Config previously asked 'frequency_cm_inv'."
+    },
+    "planetary": {
+      "field": "meta.source_row.meta.source_row.raw_payload.interval_hours",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "General tidal gap intervals (hr) - T2",
+      "__note__": "RESOLVED at 4 levels of nesting. Consider running scripts/unwrap_t_series.py to flatten instead."
+    },
+    "cosmology": {
+      "field": "meta.source_row.meta.source_row.raw_payload.d_proxy",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Cosmological distance proxy - T4",
+      "__note__": "RESOLVED at 4 levels of nesting. Same unwrap candidate as T2."
+    },
+    "orbital_wrongbox": {
+      "field": "period_days",
+      "formula_type": "log_volumetric",
+      "x0": 1.0,
+      "description": "FALSIFICATION: volumetric math on 1D period"
+    },
+    "stellar_wrongbox": {
+      "field": "P0_ms",
+      "formula_type": "log_inverse",
+      "x0": 1.0,
+      "description": "FALSIFICATION: inverse math on raw period"
+    },
+    "materials_wrongbox": {
+      "field": "volume",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "FALSIFICATION: standard math on 3D volume"
+    },
+    "kinematic_wrongbox": {
+      "field": "v_perp",
+      "formula_type": "log_volumetric",
+      "x0": 1.0,
+      "description": "FALSIFICATION: volumetric math on 1D velocity",
+      "__note__": "LAKE GATED: raw v_perp reaches 3.70e10 km/s (123,000x c)."
+    },
+    "quantum": {
+      "field": "_raw_payload.wavelength_nm",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "NIST ASD wavelength (nm) - Q1",
+      "__note__": "LAKE GATED. Lake meta states scalarization is log(upper_energy_cm1+1)/log(k_geo), which contradicts this field. Same NIST source as quantum_transitional."
+    },
+    "chemistry": {
+      "field": "__UNRESOLVED__",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Molecular bond length (Angstrom) - GENUINE REBUILD REQUIRED",
+      "__note__": "LAKE GATED. No bond length at any depth. scalar_klc == _raw_payload.scalar_invariant bit-identical: no log transform applied."
+    },
+    "materials": {
+      "field": "__DERIVED__",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Crystal bond length (Angstrom), derived",
+      "derived_from": [
+        "meta.source_row._raw_payload.volume",
+        "meta.source_row._raw_payload.nsites"
+      ],
+      "derivation": "(volume/nsites)**(1/3)",
+      "__note__": "LAKE GATED. bond_length=(volume/nsites)^(1/3) then log_standard, per lake RCA Vol7 Ch5. Requires engine support for derived fields."
+    },
+    "quantum_molecular_geometry": {
+      "field": "_raw_payload.value",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Bond length (Angstrom) - Q2",
+      "filter": {
+        "_raw_payload.measurement_type": "bond_length_angstroms"
+      },
+      "__note__": "LAKE GATED. Needs typed read: only rows where _raw_payload.measurement_type == 'bond_length_angstroms'."
+    },
+    "stellar_luminosity": {
+      "field": "__UNRESOLVED__",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Stellar absolute G magnitude - S3",
+      "__note__": "LAKE GATED. No abs_g_mag_shifted. Candidates: M_G_median, phot_g_mean_mag+parallax. Need full scalarization_formula string."
+    },
+    "galactic_radius": {
+      "field": "effective_radius_kpc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Galaxy effective radius (kpc) - G1a",
+      "__note__": "LAKE GATED. min=-9999 sentinel. Needs filter: drop rows where value <= 0."
+    },
+    "biology_backbone_top8000": {
+      "field": "angle_degrees",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "B4 Top8000 backbone phi/psi dihedrals (deg)",
+      "__note__": "LAKE GATED. Range [-180,180]; log_standard undefined below -1. Needs pre-registered formula ruling."
+    },
+    "biology_backbone_full": {
+      "field": "angle_degrees",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "B5 full RCSB backbone phi/psi dihedrals (deg)",
+      "__note__": "LAKE GATED. Same as B4."
+    },
+    "biology_backbone_b5subset": {
+      "field": "angle_degrees",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "b5_pdb_protein (separate on-disk lake)",
+      "__note__": "LAKE GATED. Overlap with b4/b5_full unverified."
+    },
+    "orbital_null": {
+      "field": "scalar_klc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "NP1 sovereign orbital null",
+      "__note__": "LAKE GATED. On disk, not in Vol11 config."
+    },
+    "planck": {
+      "field": "scalar_klc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Planck-scale synthetic null (lake disabled)"
+    },
+    "s1_gaia_parallax": {
+      "field": "dist_pc",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Gaia DR3 parallax distance (pc) - S1. Record carries stale domain 'stellar'.",
+      "__note__": "Resolves to _raw_payload.dist_pc. Bypasses the sector-normalized scalar_klc."
+    },
+    "s4_gaia_colour": {
+      "field": "meta.source_row._raw_payload.bp_rp",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Gaia DR3 BP-RP colour index - S4. Record carries stale domain 'stellar'.",
+      "__note__": "Explicit dotted path: bp_rp appears at more than one depth in this lake."
+    },
+    "t2_planetary": {
+      "field": "interval_hours",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "General tidal gap intervals (hr) - T2. Record carries stale domain 'planetary'.",
+      "__note__": "Resolves four levels deep. scripts/unwrap_t_series.py would flatten this."
+    },
+    "t4_cosmological": {
+      "field": "d_proxy",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "SDSS cosmological distance proxy - T4. Record carries stale domain 'cosmology'.",
+      "__note__": "Resolves four levels deep. Same unwrap candidate as T2."
+    },
+    "n4_cosmological": {
+      "field": "scalar_klc",
+      "formula_type": "precomputed",
+      "x0": 1.0,
+      "description": "N4 sovereign cosmological null.",
+      "__note__": "REQUIRES RULING before citing. 'precomputed' declares the stored value IS the KLGHS scalar. N4 shares the record domain 'cosmology' with the REAL t4 lake, and its range [2.32227, 2.60422] begins exactly at t4's first-record value (2.3222363). Confirm N4 is not derived from the real cosmology lake."
+    },
+    "k1_kepler_rotation": {
+      "field": "meta.prot_days",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Kepler surface rotation period (days) - K1. Record carries pooled domain 'stellar_rotation'.",
+      "__note__": "Explicit dotted path REQUIRED: meta.prot_days is a float, _raw_payload.prot_days is the STRING '1.532'. Both sit at depth 1, so a plain key resolves by dict insertion order."
+    },
+    "k2_pulsar_periods": {
+      "field": "_raw_payload.p0_ms",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "ATNF pulsar rotation period (ms) - K2. Record carries pooled domain 'stellar_rotation'.",
+      "__note__": "Confirms the Vol 11 defect: Vol 11 asked pooled 'stellar_rotation' for 'period_days', a field present in neither K1 nor K2."
+    },
+    "p2_orbital_radius": {
+      "field": "pl_orbsmax",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Orbital semi-major axis (AU) - P2. Record carries stale domain 'orbital'.",
+      "__note__": "BELOW LOCK FLOOR: floor at 16/pi is 0.1885 AU and most confirmed planets orbit inside it. Pending Mondy's Erratum-3 ruling - report OUT-OF-RANGE, or set x0 to lift into range BEFORE looking at results."
+    },
+    "p3_planet_mass": {
+      "field": "pl_bmassj",
+      "formula_type": "log_standard",
+      "x0": 1.0,
+      "description": "Planet mass (M_jup) - P3. Record carries stale domain 'orbital'.",
+      "__note__": "BELOW LOCK FLOOR, floor 0.1885 M_jup. Same pending ruling as P2."
+    }
+  },
+  "__lake_id_keys__": "Entries below named for a LAKE ID rather than a domain. The engine consults lake_id when the record's own 'domain' field fails to resolve. Several promoted lakes carry stale or pooled domain strings (s1/s4 both say 'stellar'; k1/k2 both say 'stellar_rotation'; p2/p3 both say 'orbital'), so these entries let each lake resolve individually WITHOUT restamping any promoted lake or breaking chain-of-custody vs Vol 11.",
+  "__unresolved__": {
+    "b3_amino": "Record domain 'biology'. No raw field at any depth; only a precomputed scalar. Needs a ruling on what produced it before 'precomputed' can be declared. LAKE CURRENTLY WILL TRIP THE STRICT GATE.",
+    "t1_biological": "Record domain 'biology'. Same. NOTE: scalar range [1.94591, 2.30259] matches ln(7)=1.945910 and ln(10)=2.302585 to six figures - this lake may be scalarized in NATURAL log rather than log base k_geo. Verify before use. LAKE CURRENTLY WILL TRIP THE STRICT GATE."
+  }
+}

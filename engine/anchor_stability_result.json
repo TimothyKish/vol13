@@ -1,0 +1,22 @@
+{
+  "present": [
+    "nuclear_binding",
+    "stellar_rotation",
+    "orbital",
+    "biology_backbone",
+    "stellar_kinematic",
+    "galactic"
+  ],
+  "shortlist": [
+    [
+      "nuclear_binding",
+      21,
+      7.318575999610279
+    ],
+    [
+      "galactic",
+      21,
+      53.063626258580946
+    ]
+  ]
+}

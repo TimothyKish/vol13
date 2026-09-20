@@ -1,0 +1,35 @@
+{
+  "runs": 10,
+  "anchors": {
+    "quantum_kinematic": {
+      "anchor_N": 16,
+      "mean": -0.014334439467104507,
+      "std": 0.0835898974809912,
+      "min": -0.17971667037073757,
+      "max": 0.11686340806974302,
+      "anchor_peak_fraction": 0.0,
+      "most_frequent_peak_N": 21,
+      "most_frequent_peak_fraction": 0.7,
+      "aligned": false,
+      "peak_distribution": {
+        "18": 2,
+        "21": 7,
+        "9": 1
+      }
+    },
+    "quantum_transitional": {
+      "anchor_N": 25,
+      "mean": 12.99763819301018,
+      "std": 0.9432726364830075,
+      "min": 10.949120924728993,
+      "max": 14.416428144022609,
+      "anchor_peak_fraction": 0.0,
+      "most_frequent_peak_N": 16,
+      "most_frequent_peak_fraction": 1.0,
+      "aligned": false,
+      "peak_distribution": {
+        "16": 10
+      }
+    }
+  }
+}

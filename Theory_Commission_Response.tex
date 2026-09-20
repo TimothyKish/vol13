@@ -1,0 +1,493 @@
+% ==============================================================================
+% RESPONSE TO THE THEORY COMMISSION
+% KishLattice 16pi Initiative LLC
+% Respondent: Claude (Anthropic), answering the commission of 7 September 2026
+% Date: 7 September 2026
+% ==============================================================================
+\documentclass[11pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}
+\usepackage{xcolor}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\definecolor{kishblue}{RGB}{0,50,120}
+\definecolor{cruciblered}{RGB}{170,45,10}
+\definecolor{goldseal}{RGB}{184,134,11}
+\definecolor{signalgreen}{RGB}{0,120,60}
+
+\newtcolorbox{answerbox}[1]{colback=kishblue!5,colframe=kishblue,fonttitle=\bfseries,title=#1}
+\newtcolorbox{derivbox}{colback=signalgreen!6,colframe=signalgreen,fonttitle=\bfseries,title=Derivation}
+\newtcolorbox{negbox}{colback=cruciblered!5,colframe=cruciblered,fonttitle=\bfseries,title=Negative result}
+\newtcolorbox{caveatbox}{colback=goldseal!8,colframe=goldseal,fonttitle=\bfseries,title=Caveat}
+\newtcolorbox{erratabox}{colback=gray!8,colframe=gray!55,fonttitle=\bfseries,title=Erratum implied}
+
+\newcommand{\kgeo}{k_{\mathrm{geo}}}
+\newcommand{\lcell}{\ell_{\mathrm{cell}}}
+\newcommand{\lP}{\ell_{P}}
+
+\title{\bfseries Response to the Theory Commission\\[4pt]
+\large On $f$, the Lattice Energy Expression, and What the Kish Action Principle Does and Does Not Determine}
+\author{Prepared for KishLattice 16$\pi$ Initiative LLC}
+\date{7 September 2026}
+
+\begin{document}
+\maketitle
+
+\section*{Standing of this response}
+
+\begin{caveatbox}
+The commission was drafted by Atlas. This response is produced by the same underlying model.
+It brings time and rigour to the derivations that the commission could not, but it does
+\emph{not} bring the independence a different reasoning system would. Where this response
+confirms arithmetic already in the commission's \S1.3, that confirmation should be weighted
+as a re-check by the same hand, not as corroboration. Where it reaches a conclusion the
+commission did not anticipate --- Q1 and Q4 below --- those are the parts that carry
+information.
+
+\medskip
+All arithmetic below was executed, not recalled. Every number can be reproduced from the
+stated inputs.
+\end{caveatbox}
+
+\section*{Summary of findings}
+
+\begin{center}
+\small
+\begin{tabular}{@{}clp{0.56\textwidth}@{}}
+\toprule
+& \textbf{Question} & \textbf{Finding} \\
+\midrule
+Q1 & Does an action principle fix $n$? &
+\textbf{Not as written.} Volume 1 contains no action functional. \textbf{But one additional
+postulate --- that the lattice bulk has four \emph{spatial} dimensions --- derives $n=0$
+exactly}, by Gauss's law. The postulate is independently motivated by the framework's own
+24-cell geometry. Its cost is stated. \\
+\addlinespace
+Q2 & Is $\lcell$ independently determined? &
+\textbf{No, and it cannot be.} Every input to the geometry is dimensionless. A length cannot
+be derived from dimensionless inputs. $\lcell = \lP$ is a postulate, not a result. \\
+\addlinespace
+Q3 & Which reading of $f$ survives? &
+Under Q1, $f = \lcell^2 c^2$ is derived. The drag factor $F(d,T)$ is phenomenological and
+multiplies it; the referee's reconciliation is consistent but only half-derived. \\
+\addlinespace
+Q4 & Is $\kgeo$'s dimensional status consistent? &
+\textbf{No.} Eq.~1.3 is correct: $\kgeo$ is dimensionless. \S1.4 is in error. The Hubble
+relation $H_{\mathrm{local}} = H_{\mathrm{early}} + \kgeo$ holds only in km/s/Mpc and fails
+by 18 orders of magnitude in SI. It is Erratum 4f in the theory. \\
+\addlinespace
+Q5 & Does a scale-bridging claim survive? &
+\textbf{Not a dimensional one.} $\pi/16$ fits the MOND $a_0 \sim cH_0$ coincidence no better
+than the literature's $1/2\pi$. The framework's only scale-free result is the dimensionless
+register structure, currently standing on one domain. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ==============================================================================
+\section{Q1 --- The radial power}
+% ==============================================================================
+
+\subsection{What Volume 1 actually contains}
+
+The commission asks whether the Kish Action Principle of Volume 1 \S1.2 yields a determinate
+power $n$ in
+\begin{equation}
+f = \lcell^2 c^2 \left(\frac{\lcell}{r}\right)^{n}.
+\label{eq:power}
+\end{equation}
+
+Reading \S1.2 in full: \S1.2 defines $N_{\mathrm{total}} = d^2 = 16$. \S1.2.1 postulates
+$\Phi_{\mathrm{cycle}} = \pi$. \S1.2.2, titled ``The Kish Action Principle,'' defines
+$\kgeo = N_{\mathrm{total}}/\Phi_{\mathrm{cycle}}$. \S1.3 gives the Gutzwiller/Berry--Keating
+phase $\Phi_{\mathrm{Kish}} = \cos[E \cdot \tfrac{16}{\pi} \cdot \ln p]$.
+
+\begin{negbox}
+\textbf{There is no action functional anywhere in Volume 1.} No $S = \int L\,dt$, no
+Lagrangian density, no variation, no Euler--Lagrange equation. The section titled ``Action
+Principle'' names a ratio. It does not state a principle of stationary action.
+
+\medskip
+\noindent The Gutzwiller phase of \S1.3 is a trace-formula ansatz, not a Lagrangian; it
+describes a spectral density, not the dynamics of a mass at radius $r$.
+
+\medskip
+\noindent \textbf{Consequently the question as posed has a negative answer: the framework as
+written does not determine $n$.}
+\end{negbox}
+
+\subsection{The one route that does}
+
+A negative answer is acceptable, but there is a constructive one available, and it uses only
+material the framework already contains. It requires making explicit a postulate that Volume 1
+states in passing and never uses.
+
+\begin{derivbox}
+\textbf{Postulate (already in Volume 1, \S1.2.2):} \emph{``mapping a 4D hypercube onto a
+cyclic time loop.''} The 24-cell of the Rosetta Atlas is a regular polytope in \textbf{four
+spatial dimensions}. Take the lattice bulk to be four-dimensional in space, with time the
+separate cyclic coordinate $\Phi = \pi$.
+
+\medskip
+\textbf{Gauss's law in $d$ spatial dimensions.} For a point source of strength $Q$, the flux
+through a $(d-1)$-sphere of radius $r$ is conserved:
+\[
+\oint_{S^{d-1}} \mathbf{E}\cdot d\mathbf{A} = Q
+\quad\Longrightarrow\quad
+E(r)\,\Omega_{d-1}\,r^{\,d-1} = Q
+\quad\Longrightarrow\quad
+E(r) = \frac{Q}{\Omega_{d-1}\, r^{\,d-1}},
+\]
+where $\Omega_{d-1}$ is the surface area of the unit $(d-1)$-sphere. Integrating the field
+gives the potential,
+\begin{equation}
+V(r) = -\!\int E\,dr = \frac{Q}{(d-2)\,\Omega_{d-1}}\cdot\frac{1}{r^{\,d-2}}
+\qquad (d \neq 2).
+\label{eq:gauss}
+\end{equation}
+
+\medskip
+\textbf{For $d = 4$:}
+\[
+\Omega_3 = 2\pi^2, \qquad V(r) = \frac{Q}{2\cdot 2\pi^2}\cdot\frac{1}{r^2}
+= \frac{Q}{4\pi^2\, r^2}.
+\]
+\textbf{The potential of a point source in four spatial dimensions falls as $1/r^2$.} That is
+$n = 0$ in Equation~\eqref{eq:power}, derived rather than assumed.
+
+\medskip
+\textbf{Interaction energy of a test mass $m$.} With the source strength set by the lattice
+scale, $Q = \kappa\, m\, \lcell^2 c^2$ for some dimensionless coupling $\kappa$,
+\[
+E_{\mathrm{lat}} = m\,V(r) = \frac{\kappa}{4\pi^2}\; m c^2 \left(\frac{\lcell}{r}\right)^2 .
+\]
+Matching to the Atlas form $E_{\mathrm{lat}} = \tfrac{16}{\pi}\, m c^2 (\lcell/r)^2$ requires
+\[
+\frac{\kappa}{4\pi^2} = \frac{16}{\pi}
+\quad\Longrightarrow\quad
+\kappa = 64\pi .
+\]
+\end{derivbox}
+
+\begin{answerbox}{Q1 --- Answer}
+\textbf{The Kish Action Principle as written does not fix $n$.} Adding one postulate ---
+\emph{the lattice bulk is four-dimensional in space} --- fixes $n = 0$ exactly, by Gauss's
+law, and reproduces the Atlas form with a dimensionless coupling $\kappa = 64\pi$.
+
+\medskip
+\textbf{Is the postulate independently motivated?} Yes, and more strongly than most of the
+framework's other assumptions: the 24-cell is a four-dimensional object; Volume 1 explicitly
+invokes a 4D hypercube; and $N_{\mathrm{total}} = d^2 = 16$ already uses $d=4$. The
+postulate makes explicit what the geometry already assumes.
+
+\medskip
+\textbf{Its cost is severe and must be stated.} We observe three spatial dimensions.
+Observed gravity and electrostatics both go as $1/r$, not $1/r^2$. \textbf{The $1/r^2$
+lattice energy therefore cannot be the interaction we measure.} It can only be a bulk
+quantity whose \emph{projection} onto the three-dimensional boundary recovers $1/r$ --- and
+that projection is not derived anywhere. Volume 1's holographic language (\S1.2: ``a
+holographic projection on the boundary preserves the full information content of the bulk
+tensor'') gestures at it. It does not compute it.
+
+\medskip
+\textbf{The framework has therefore traded one gap for a smaller one.} Before: an undefined
+$f$ and an unfixed power. After: a derived $f = \lcell^2 c^2$, a derived $n = 0$, a derived
+coupling $\kappa = 64\pi$, and one open problem --- \textbf{the bulk-to-boundary projection}
+that would turn a 4D $1/r^2$ into the 3D $1/r$ we observe. That is a well-posed question.
+It is also the question on which the framework's connection to observed physics now entirely
+rests.
+\end{answerbox}
+
+\subsection{What $\kappa = 64\pi$ would have to mean}
+
+The coupling absorbs the $16/\pi$ and the $4\pi^2$ of the 3-sphere. Written out:
+\[
+\kappa = 64\pi = 4 \times 16 \times \pi = 4\, N_{\mathrm{total}}\, \Phi_{\mathrm{cycle}} .
+\]
+Four times the metric component count times the cyclic phase. Whether that factorisation is
+meaningful or numerological I cannot say from the material available. It is recorded so it
+can be tested against the geometry by someone who knows the 24-cell better than I do.
+
+% ==============================================================================
+\section{Q2 --- Is $\lcell$ independently determined?}
+% ==============================================================================
+
+\begin{negbox}
+\textbf{No, and it cannot be determined from the framework's internal geometry.}
+
+\medskip
+Every input to the derivation of $\kgeo$ is dimensionless: $N_{\mathrm{total}} = 16$ is a
+count, $\Phi_{\mathrm{cycle}} = \pi$ is an angle in radians, the 24-cell packing is a
+combinatorial fact. \textbf{No combination of dimensionless quantities yields a length.}
+The framework's geometry, however rich, is scale-free by construction and cannot supply a
+scale.
+
+\medskip
+$\lcell = \lP = \sqrt{\hbar G/c^3}$ is therefore a \textbf{postulate} --- the identification
+of the lattice spacing with the Planck length --- not a derivation. It imports $\hbar$, $G$
+and $c$ from outside the framework. Volume 1's Listing 14.1 asserts it as a variable
+assignment and does not argue it.
+
+\medskip
+This is not a defect peculiar to KishLattice. \emph{Every} discrete-spacetime programme
+faces it. It is simply a fact that should be stated as a postulate rather than presented as
+a consequence.
+\end{negbox}
+
+\begin{answerbox}{Q2 --- Answer, and the equipartition radius}
+$\lcell$ is fixed by postulate at $\lP = 1.616255\times10^{-35}$~m. The Rosetta Atlas's
+alternative chain via $c = \lcell f_{24}$ with a laboratory $f_{24}$ is unit-dependent and
+should be withdrawn; Volume 1's identification is the one that survives.
+
+\medskip
+With $\lcell = \lP$, the equipartition radius is
+\[
+r^* = \frac{4}{\sqrt{\pi}}\,\lP = 2.256758 \times 1.616255\times10^{-35}~\mathrm{m}
+= 3.648\times10^{-35}~\mathrm{m},
+\]
+2.26 Planck lengths. \textbf{There is no physical system at that radius.} The equipartition
+condition $E_{\mathrm{lat}} = mc^2$ is therefore satisfied only in the Planck regime, which
+is consistent with the 4D-bulk reading of Q1 --- the lattice energy is Planck-scale bulk
+physics, not an atomic or astrophysical quantity.
+
+\medskip
+On the commission's check of $4/\sqrt{\pi}$ against the electron length scales: confirmed.
+They are separated by $1/\alpha$, not by $2.2568$. No coincidence exists, and none should be
+manufactured.
+\end{answerbox}
+
+% ==============================================================================
+\section{Q3 --- Which reading of $f$ survives?}
+% ==============================================================================
+
+\begin{answerbox}{Q3 --- Answer}
+Under the Q1 derivation, reading \textbf{(b)} is correct and reading \textbf{(a)} is a
+separate multiplicative factor:
+\[
+f = \underbrace{\lcell^2 c^2}_{\text{derived (Q1)}} \;\times\;
+\underbrace{F(d,T)}_{\text{phenomenological}},
+\qquad F(d,T) = \left[1 + k\,d\left(\frac{T_0}{T}\right)^{\alpha}\right]^{-1}.
+\]
+
+\medskip
+\textbf{The referee's reconciliation is consistent, and exactly half of it is derived.} The
+dimensional carrier $\lcell^2 c^2$ follows from Gauss's law in four dimensions with the Planck
+identification. The drag factor $F(d,T)$ does not follow from anything in Volume 1 or the
+Atlas; it is a phenomenological damping law with three free constants ($k$, $T_0$, $\alpha$)
+that must be fitted or independently derived.
+
+\medskip
+Reading \textbf{(c)} --- $f$ as a stand-in for $G$ --- is dissolved by Q1. The $1/r^2$ form is
+not gravity in disguise; it is a four-dimensional point-source potential, and $\kgeo$ does not
+replace $G$ because the bulk expression has no $G$ in it. $G$ enters only through
+$\lcell = \lP$.
+
+\medskip
+\textbf{The name ``slipstream factor'' should attach to $F(d,T)$ alone}, which is what it
+describes. The full $f$ of the Atlas conflates a derived geometric carrier with an undetermined
+damping law, and the conflation is the source of the three incompatible readings.
+\end{answerbox}
+
+% ==============================================================================
+\section{Q4 --- The dimensional status of $\kgeo$}
+% ==============================================================================
+
+\begin{derivbox}
+\textbf{Equation 1.3 is correct.} $\kgeo = N_{\mathrm{total}}/\Phi_{\mathrm{cycle}} = 16/\pi$
+is a count divided by an angle. Both are dimensionless. $\kgeo$ is a pure number.
+
+\medskip
+\textbf{\S1.4 is in error.} It asserts that $16/\pi$ possesses ``the physical dimensions of
+Metric Tension per Unit Volume,'' $[M][L^{-1}][T^{-2}]$, and writes
+\begin{equation}
+H_{\mathrm{local}} = H_{\mathrm{early}} + \kgeo .
+\label{eq:hubble}
+\end{equation}
+
+\medskip
+\textbf{Test in the units Volume 1 uses.} Planck 2018 gives $H_0 = 67.4$ km/s/Mpc; SH0ES
+gives $73.0 \pm 1.0$. Then
+\[
+67.4 + 5.093 = 72.49 \quad\text{vs}\quad 73.0 \pm 1.0 .
+\]
+Inside the error bar. This is why \S1.4 makes the claim.
+
+\medskip
+\textbf{Test in SI.} $1~\mathrm{km/s/Mpc} = 3.2408\times10^{-20}~\mathrm{s^{-1}}$, so
+\[
+H_{\mathrm{early}} = 2.1843\times10^{-18}~\mathrm{s^{-1}}, \qquad
+H_{\mathrm{early}} + \kgeo = 5.0930~\mathrm{s^{-1}},
+\]
+which exceeds $H_{\mathrm{SH0ES}} = 2.3658\times10^{-18}~\mathrm{s^{-1}}$ by a factor of
+$2.15\times10^{18}$.
+\end{derivbox}
+
+\begin{negbox}
+\textbf{Equation~\eqref{eq:hubble} holds in one unit system and fails by eighteen orders of
+magnitude in another.} A physical relation cannot do that. A dimensionless number cannot be
+added to a rate. The agreement in km/s/Mpc is a numerical coincidence contingent on the
+choice of kilometre, second, and megaparsec.
+
+\medskip
+\textbf{This is Erratum 4f --- unit dependence --- appearing in the theory.} The empirical
+programme found the same defect in its statistic and spent a volume removing it. The theory
+carries it in \S1.4.
+\end{negbox}
+
+\begin{answerbox}{Q4 --- Answer}
+There is no formulation in which both \S1.3 and \S1.4 are true. $\kgeo$ is dimensionless.
+\S1.4's dimensional assertion is wrong, and the Hubble relation built on it is a unit
+coincidence and should be withdrawn.
+
+\medskip
+\textbf{What could be rescued.} If the framework wishes to relate $\kgeo$ to the Hubble
+tension, the dimensionally admissible form is multiplicative:
+\[
+H_{\mathrm{local}} = H_{\mathrm{early}}\,(1 + \epsilon), \qquad
+\epsilon = \frac{73.0 - 67.4}{67.4} = 0.083 \pm 0.016 .
+\]
+Whether $\epsilon = 0.083$ relates to $\kgeo$ in any derivable way --- $\pi/16 \cdot$
+something, $1/(4\kgeo) = 0.049$, $\ln(\kgeo)/20 = 0.081$ --- I checked the obvious
+candidates and none is compelling. The last is within $1\sigma$ and is exactly the kind of
+coincidence the commission's conditions say to distrust. I report it so it is not
+rediscovered as a result.
+\end{answerbox}
+
+% ==============================================================================
+\section{Q5 --- Does a scale-bridging claim survive?}
+% ==============================================================================
+
+\subsection{The MOND check}
+
+Milgrom noted early that MOND's acceleration scale is numerically close to $cH_0$:
+$a_0 \approx cH_0/2\pi$. If the lattice supplied a bridge, $\kgeo$ might appear in that ratio.
+
+\begin{derivbox}
+\[
+cH_0 = 2.99792\times10^{8} \times 2.2685\times10^{-18} = 6.801\times10^{-10}~\mathrm{m/s^2}
+\qquad (H_0 = 70~\mathrm{km/s/Mpc}),
+\]
+\[
+a_0 = 1.20\times10^{-10}~\mathrm{m/s^2}, \qquad \frac{a_0}{cH_0} = 0.1764 .
+\]
+\begin{center}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+candidate & value & deviation \\
+\midrule
+$1/2\pi$ (Milgrom) & 0.1592 & 10\% \\
+$\pi/16 = 1/\kgeo$ & 0.1963 & 11\% \\
+$1/6$ & 0.1667 & 6\% \\
+\bottomrule
+\end{tabular}
+\end{center}
+\end{derivbox}
+
+\begin{negbox}
+$\pi/16$ fits the $a_0/cH_0$ ratio no better than the literature's $1/2\pi$, and worse than
+$1/6$. \textbf{There is no evidence that $\kgeo$ appears in the MOND scale.} The
+commission's caution about coincidences applies: with $H_0$ uncertain at the 8\% level and
+$a_0$ at the 10--15\% level, any constant between 0.15 and 0.20 ``fits.''
+\end{negbox}
+
+\subsection{The structural point}
+
+\begin{answerbox}{Q5 --- Answer}
+\textbf{A dimensional bridge does not survive, and the reason is structural.}
+
+\medskip
+Under Q1 and Q2, the lattice energy is a Planck-scale bulk quantity: $\lcell = \lP$,
+$r^* = 2.26\,\lP$, and $E_{\mathrm{lat}}$ is negligible at every scale above the Planck
+regime ($4.75\times10^{-49}\,mc^2$ at the Bohr radius). \textbf{It has nothing to say at
+atomic scales and nothing to say at galactic scales.} It cannot bridge them because it is
+present at neither.
+
+\medskip
+The commission's framing is correct: a characteristic length picks a scale, and picking a
+scale is the opposite of bridging scales. MOND uses an acceleration threshold precisely
+because a threshold is scale-free in a way a length is not.
+
+\medskip
+\textbf{The framework's one genuinely scale-free object is the register structure.}
+Periodicity in $\log x$ has no preferred scale by construction --- Volume 12 proved unit
+invariance for the period statistic by algebra --- and a register at $\Delta_N$ means the
+same thing for pulsar spin-down at $10^{-21}$~s/s and NIST transitions at $10^{16}$~Hz.
+\emph{If} the lattice bridges scales, that is where the claim lives: in a dimensionless
+log-period, not in a cell spacing.
+
+\medskip
+That claim currently rests on one domain, and that domain faces a Rydberg null that has not
+been run. The empirical programme has been honest about this. The theory should be equally
+honest that $E_{\mathrm{lat}}$ is not the vehicle.
+\end{answerbox}
+
+% ==============================================================================
+\section{Errata implied by this response}
+% ==============================================================================
+
+\begin{erratabox}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Volume 1, \S1.4.} The assertion that $\kgeo$ carries dimensions of metric
+tension per unit volume is withdrawn; $\kgeo$ is dimensionless per Eq.~1.3. The relation
+$H_{\mathrm{local}} = H_{\mathrm{early}} + \kgeo$ is withdrawn as a unit coincidence.
+
+\item \textbf{Volume 1, Listing 14.1.} The script divides $\lP f_P = c$ by $\kgeo$ and
+reports the result as $c$; it is off by exactly $1/\kgeo$. The ``5-SIGMA ALIGNMENT LOCKED''
+status is a print statement, not a test. The listing is withdrawn. Separately,
+$c = \lP f_P$ is an identity of Planck units, not a derivation.
+
+\item \textbf{Rosetta Atlas, Lattice Energy Equation.} $f$ is redefined as
+$f = \lcell^2 c^2 \cdot F(d,T)$, with the geometric carrier derived (this response, Q1) and
+the drag factor labelled phenomenological. The parameter block states this.
+
+\item \textbf{Rosetta Atlas, ``mirrors Newton''.} The paragraph is struck. The expression is
+a four-dimensional point-source potential, not a gravitational analogue, and $\kgeo$ does not
+replace $G$.
+
+\item \textbf{Rosetta Atlas, $\lcell$ via $f_{24}$.} The chain $c = \lcell f_{24}$ with
+$f_{24} = 24/\pi$~Hz is unit-dependent and contradicts Volume 1 by 42 orders of magnitude.
+Withdrawn in favour of $\lcell = \lP$, stated as a postulate.
+
+\item \textbf{New postulate to be stated explicitly.} The lattice bulk has four spatial
+dimensions. This is already implicit in $N_{\mathrm{total}} = d^2 = 16$ and in the 24-cell,
+and it is what derives $n=0$. It should be a numbered postulate, not a passing phrase.
+
+\item \textbf{New open problem to be stated explicitly.} The bulk-to-boundary projection
+that maps the 4D $1/r^2$ potential onto the observed 3D $1/r$. Nothing in the corpus computes
+it. Everything connecting $E_{\mathrm{lat}}$ to measured physics depends on it.
+\end{enumerate}
+\end{erratabox}
+
+% ==============================================================================
+\section{Closing}
+% ==============================================================================
+
+The commission asked whether a derivation exists. The answer is: \textbf{not in the documents
+as written, but one is available at the cost of one postulate the framework already
+half-states}, and it derives $f$, $n$, and a coupling constant in three lines. The price is
+that the lattice energy becomes a four-dimensional Planck-scale bulk quantity with no
+computed connection to the three-dimensional physics we observe.
+
+That is not a breakthrough. It is a clarification. It replaces an undefined parameter with a
+derived one, and replaces a vague gap with a precise one --- the projection problem --- that
+a competent theorist could attack. Whether the framework survives that attack I cannot say.
+
+The commission also hoped this response might open a bridge between the quantum and MOND
+regimes. It does not, and I think the reason is instructive: the framework's dimensional
+machinery lives at the Planck scale, and its dimensionless machinery --- the register
+structure --- is the only part with scale-free content. If a bridge exists in this programme,
+it is in Volume 12's log-periodicity result, not in Volume 1's energy expression. The
+empirical programme has one domain standing and a Rydberg null to run. That is where I would
+put the effort.
+
+\medskip
+\noindent Three of the five questions returned negative results. Under the commission's own
+conditions those are publishable, and I would publish them.
+
+\end{document}

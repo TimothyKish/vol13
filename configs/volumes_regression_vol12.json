@@ -1,0 +1,14 @@
+{
+  "volumes": {
+    "L_emission_nist": {
+      "domain": "quantum_transitional",
+      "pinch_slot": "vertex_emission",
+      "enabled": true
+    },
+    "s2_stellar_kinematics": {
+      "domain": "stellar_kinematic",
+      "pinch_slot": "stellar_kinematic",
+      "enabled": true
+    }
+  }
+}

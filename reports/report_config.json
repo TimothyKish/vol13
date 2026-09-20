@@ -1,0 +1,34 @@
+{
+  "ramachandran_domains": [
+    "biology_backbone", 
+    "biology_backbone_full", 
+    "subnuclear_mass", 
+    "orbital_ttv"
+  ],
+  "wrongbox_domains": [
+    "biology_backbone", 
+    "orbital_ttv", 
+    "subnuclear_mass", 
+    "seismic_temporal"
+  ],
+  "kinematic_pairs": [
+    {"kinematic": "stellar_kinematic", "positional": "stellar", "label": "Gaia same stars"},
+    {"kinematic": "orbital", "positional": "orbital_radius", "label": "Orbital K vs R"}
+  ],
+  "domain_families": {
+    "kinematic": ["stellar_kinematic", "orbital", "orbital_ttv", "planetary_atlantic", "planetary_gulf"],
+    "electromagnetic": ["stellar_colour", "stellar_luminosity"],
+    "quantum_molecular": ["quantum", "chemistry", "materials"],
+    "nuclear": ["nuclear_binding", "nuclear_decay", "subnuclear_mass"],
+    "biological": ["biology_backbone", "biology_amino", "biology_other"],
+    "galactic": ["galactic", "galactic_rotation"],
+    "cosmic": ["cmb_anisotropy", "cosmology", "gravitational_wave"],
+    "seismic": ["seismic_japan", "seismic_san_andreas", "seismic_cascadia", "seismic_anatolian"],
+    "null": ["null_orbital", "null_cosmology", "orbital_mass", "orbital_radius"]
+  },
+  "physical_scales": {
+    "stellar_colour": {"scale_m": 1e19, "scale_label": "stellar"},
+    "biology_backbone": {"scale_m": 1e-9, "scale_label": "molecular"},
+    "subnuclear_mass": {"scale_m": 1e-15, "scale_label": "sub-nuclear"}
+  }
+}

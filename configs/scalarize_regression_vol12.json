@@ -1,0 +1,12 @@
+{
+  "domains": {
+    "quantum_transitional": {
+      "field": "klghs_transition_freq_Hz",
+      "formula_type": "log_standard"
+    },
+    "stellar_kinematic": {
+      "field": "val_raw_kms",
+      "formula_type": "log_standard"
+    }
+  }
+}

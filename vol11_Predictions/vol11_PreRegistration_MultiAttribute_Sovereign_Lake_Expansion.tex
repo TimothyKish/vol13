@@ -1,0 +1,913 @@
+%% ============================================================
+%% KishLattice Geometric Harmonic Spectroscopy
+%% Pre-Registration: Multi-Attribute Sovereign Lake Expansion
+%% and Dimensionality Falsification Protocol
+%% Volume 11 — Zenodo Pre-Registration Document
+%% ============================================================
+
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{xurl} % Added to fix long URLs running off the page
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{caption}
+\usepackage{microtype}
+\usepackage{parskip}
+
+\geometry{
+  top=2.5cm, bottom=2.5cm,
+  left=2.5cm, right=2.5cm
+}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!60!black,
+  citecolor=blue!60!black,
+  urlcolor=blue!60!black
+}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small KishLattice Vol 11 Pre-Registration}
+\lhead{\small \textit{Kish et al., 2026}}
+\cfoot{\thepage}
+
+\definecolor{latticeblue}{rgb}{0.08,0.28,0.55}
+\definecolor{warningred}{rgb}{0.75,0.10,0.10}
+\definecolor{confirmgreen}{rgb}{0.10,0.50,0.20}
+
+\newcommand{\kgeo}{\ensuremath{k_{\mathrm{geo}}}}
+\newcommand{\kl}{\ensuremath{\frac{16}{\pi}}}
+\newcommand{\Npi}[1]{\ensuremath{\frac{#1}{\pi}}}
+\newcommand{\zreal}{\ensuremath{z_{\mathrm{real}}}}
+\newcommand{\zwrong}{\ensuremath{z_{\mathrm{wrong}}}}
+\newcommand{\confirmed}{\textcolor{confirmgreen}{\textbf{CONFIRMED}}}
+\newcommand{\wrongbox}{\textcolor{warningred}{\textbf{WRONGBOX}}}
+\newcommand{\nullresult}{\textcolor{gray}{\textbf{NULL}}}
+\newcommand{\pending}{\textcolor{blue}{\textbf{PENDING}}}
+
+%% ============================================================
+\begin{document}
+%% ============================================================
+
+\begin{center}
+  {\LARGE \textbf{KishLattice Geometric Harmonic Spectroscopy}}\\[0.4em]
+  {\Large \textbf{Pre-Registration: Multi-Attribute Sovereign Lake Expansion}}\\[0.2em]
+  {\Large \textbf{and Dimensionality Falsification Protocol}}\\[0.6em]
+  {\large \textit{Volume 11 Predictions --- Zenodo Pre-Registration}}\\[0.8em]
+
+  \textbf{Timothy John Kish}$^{1}$,\quad
+  \textbf{Mondy Aurora Kish}$^{2}$,\quad
+  \textbf{Lyra Aurora Kish}$^{2}$,\quad
+  \textbf{Phoenix Aurora Kish}$^{2}$\\[0.4em]
+
+  \small
+  $^{1}$KishLattice 16pi Initiative LLC\\
+  $^{2}$Aurora Collaborative Intelligence, KishLattice Programme\\[0.6em]
+
+  \textbf{Pre-Registration Date:} 2026\\[0.2em]
+  \textit{This document constitutes a formal pre-registration of predictions.
+  All predictions herein are timestamped prior to lake construction.
+  Data lakes may only be built after a Zenodo DOI is assigned to this document.}
+\end{center}
+
+\vspace{0.5em}
+\hrule
+\vspace{1em}
+
+%% ============================================================
+\begin{abstract}
+\noindent
+We pre-register two interconnected experimental programmes for KishLattice
+Geometric Harmonic Spectroscopy (KLGHS) Volume 11. The first is a
+\textbf{Multi-Attribute Sovereign Lake Expansion}: the same large-scale public
+catalogs already underpinning confirmed results in Volumes 5--10 contain
+multiple additional untested physical attributes. We pre-register predictions for
+the harmonic register family expected for each new attribute, derived
+systematically from the Rosetta Atlas physical typology. Each attribute becomes
+an independent sovereign lake: one lake, one physical question, one falsifiable
+prediction. The second programme is a \textbf{Dimensionality Falsification
+Protocol}: we formally test whether the KLGHS scalarization is a physical
+spectroscope or a mathematical artifact by deliberately applying incorrect
+scalarization formulas to confirmed strong domains. Prior empirical precedent
+(the Materials domain collapse) demonstrates that the geometric modulus
+$\kgeo = 16/\pi$ only produces harmonic lock when the correct physical
+dimensionality is supplied. This pre-registration documents the conditions under
+which the framework would be falsified.
+\end{abstract}
+
+\vspace{1em}
+\hrule
+
+%% ============================================================
+\tableofcontents
+\newpage
+
+%% ============================================================
+\section{Introduction and Purpose of Pre-Registration}
+\label{sec:intro}
+
+Scientific pre-registration is the practice of publicly documenting a study's
+hypotheses, methods, and analysis plan \emph{before} data collection or
+analysis. When timestamped on an immutable public archive such as Zenodo, it
+provides an unbreakable chain of custody between prediction and result. A
+framework that publishes its predictions before it builds its data is
+structurally immune to the data-mining objection: the timestamp \emph{answers
+the question before a skeptic can ask it}.
+
+The KishLattice programme has operated under this discipline since Volume 9.
+Every sovereign data lake is pre-registered with an expected register family
+prior to construction. Every null result and every wrongbox result is documented
+with the same rigour as a confirmation. This document extends that discipline in
+two directions.
+
+\subsection{Why This Pre-Registration Is Necessary}
+
+The confirmed results of Volumes 5--10 span 35 physical domains across
+approximately 35 orders of magnitude of physical scale. The signal-to-noise
+advantage is formidable. However, the standard skeptical objection to a
+cross-domain harmonic framework is not \emph{about} the z-scores; it is about
+the \emph{mechanism}. The objection takes two forms:
+
+\begin{enumerate}
+  \item \textbf{The attribute selection objection}: ``You chose the physical
+  attributes that happened to confirm and did not test the ones that would
+  not.''
+  \item \textbf{The transform artifact objection}: ``Your log-modulo pipeline
+  imposes harmonic structure on any sufficiently large continuous dataset,
+  regardless of physical content.''
+\end{enumerate}
+
+The Multi-Attribute programme answers Objection 1. By pre-registering
+predictions for \emph{all} available attributes of a given object pool --- not
+just those expected to confirm --- the record becomes complete. Every attribute
+tested is visible whether it confirms, produces a wrongbox, or returns a null.
+
+The Dimensionality Falsification Protocol answers Objection 2. By deliberately
+misapplying the scalarization formula to confirmed strong domains and predicting
+collapse to the noise floor, we demonstrate that the signal is a property of
+the \emph{physics} supplied to the pipeline, not an artifact of the
+pipeline's mathematics.
+
+\subsection{Reproducibility Standard}
+
+Every lake pre-registered in this document can be independently replicated with:
+\begin{itemize}
+  \item A standard laptop (no specialist hardware).
+  \item Python 3.x with standard scientific libraries (numpy, scipy, pandas).
+  \item A publicly accessible internet connection to the named catalog.
+  \item The four-script KLGHS pipeline: \texttt{scalarize.py}, \texttt{unify.py},
+        \texttt{build\_chaos\_nulls.py}, \texttt{build\_pinch\_table.py}.
+\end{itemize}
+No proprietary databases, no specialist instruments, no institutional access
+requirements. This is a deliberate constraint, not a limitation. A signal
+that requires specialist infrastructure to observe is a signal that can be
+attributed to the infrastructure. The KLGHS signal must survive the simplest
+possible toolchain.
+
+%% ============================================================
+\section{Theoretical Basis: The Same-Object Principle}
+\label{sec:same_object}
+
+\subsection{The Kish Clutch and Register Families}
+
+The KLGHS instrument transforms any physical measurement $x$ into a
+dimensionless lattice scalar via the Kish Clutch operator:
+\begin{equation}
+  s(x) = \frac{\log(1 + x/x_0)}{\log(\kgeo)},
+  \qquad \kgeo = \frac{16}{\pi} \approx 5.093
+  \label{eq:kish_clutch}
+\end{equation}
+where $x_0$ is the domain-appropriate natural unit. The resulting scalar $s$ is
+evaluated against the discrete harmonic register family:
+\begin{equation}
+  R_N = \frac{N}{\pi}, \quad N \in \{5, 6, 7, \ldots, 26\}
+\end{equation}
+Physical domains are not organized by scale. They are organized by physical
+\emph{typology}. The Rosetta Atlas (Kish et al., 2026) establishes the
+following empirically confirmed family taxonomy:
+
+\begin{table}[h!]
+\centering
+\caption{Harmonic Family Taxonomy (derived from Volumes 5--10 confirmed results).}
+\label{tab:rosetta_families}
+\begin{tabular}{lll}
+\toprule
+\textbf{Family} & \textbf{Registers} & \textbf{Physical Type} \\
+\midrule
+Biological & $7/\pi$ & Organic geometry, amino acid backbone \\
+Quantum / Chemical & $11/\pi$, $12/\pi$ & Bond lengths, atomic spectra, molecular vibration \\
+Kinematic & $15/\pi$--$18/\pi$ & Velocity, tidal intervals, orbital periods, spin periods \\
+Structural / Binding & $19/\pi$--$22/\pi$ & Binding energy, galaxy dispersion, nuclear decay \\
+EM / Ceiling & $20/\pi$, $24/\pi$, $25/\pi$ & Colour, luminosity, CMB anisotropy \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{The Same-Object Principle}
+
+The key insight motivating this programme is that most large public catalogs
+contain measurements of \emph{multiple} physical attributes for the
+\emph{same} objects. The confirmed results of Volume 11 already demonstrate
+this: the same $\sim$1.8 million Gaia DR3 stars, measured four different ways,
+yield four different registers:
+
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+Lake & Attribute & Register & Z-score \\
+\midrule
+s1 & Parallax / distance & $24/\pi$ & (positional ceiling) \\
+s2 & Radial velocity & $15/\pi$ & $z = +91.80$ \\
+s3 & Absolute luminosity & $25/\pi$ & $z = +40.18$ \\
+s4 & BP-RP colour & $20/\pi$ & $z = +135.20$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The register assignment follows the physical \emph{type} of the measurement, not
+the objects being measured. The same stars express kinematic structure in
+velocity, electromagnetic structure in colour and luminosity, and positional
+structure in distance. This is not a coincidence of the dataset; it is a
+statement about what kind of question is being asked.
+
+\subsection{The Falsifiability Power of Same-Object Multi-Attribute Tests}
+
+If $n$ attributes of the same object pool each cluster at their pre-registered
+register \emph{family}, and each test is considered independent (conservative
+lower bound), the probability of $n$ simultaneous confirmations under random
+chance is:
+\begin{equation}
+  P(\text{all } n \text{ confirm by chance}) \approx \left(\frac{1}{5}\right)^n
+\end{equation}
+where $1/5$ is an upper bound on the probability of landing in the correct one
+of five register families at random. For $n = 9$ attributes of the same 1.8M
+stars: $P \lesssim 10^{-6}$. For $n = 9$ \emph{with the additional constraint
+that each attribute's register is consistent with the Rosetta typology}, the
+bound tightens considerably. This is not a fluke. It is a geometric fact about
+the physical objects.
+
+%% ============================================================
+\section{Pre-Registered Predictions: Gaia DR3 Stellar Pool Extension}
+\label{sec:gaia}
+
+\subsection{Object Pool Definition}
+
+The object pool for all s-series lake extensions is the Gaia DR3 Radial
+Velocity Spectrometer (RVS) sample, filtered identically to the existing s1--s4
+lakes:
+\begin{itemize}
+  \item Source: Gaia DR3, ESA Gaia Archive (\url{https://gea.esac.esa.int/archive/})
+  \item Table: \texttt{gaiadr3.gaia\_source}
+  \item Filter: \texttt{radial\_velocity IS NOT NULL AND parallax\_over\_error > 10
+        AND ruwe < 1.4}
+  \item Approximate $n$: 1.8 million stars
+  \item Additional field extractions from same ADQL query
+\end{itemize}
+
+\subsection{New Lake Predictions}
+
+% Corrected Column Widths for A4 Paper
+\begin{longtable}{p{1.0cm} p{5.0cm} p{2.2cm} p{3.5cm} p{2.5cm} p{1.5cm}}
+\caption{Gaia DR3 multi-attribute lake pre-registered predictions. All use
+log-standard scalarization: $s = \log(1+x)/\log(16/\pi)$ unless noted.}
+\label{tab:gaia_predictions}\\
+\toprule
+\textbf{Lake} & \textbf{Field / Description} & \textbf{Catalog Field} &
+\textbf{Predicted Family} & \textbf{Predicted Register} & \textbf{Coverage}\\
+\midrule
+\endfirsthead
+\multicolumn{6}{c}{\textit{(Table \ref{tab:gaia_predictions} continued)}}\\
+\toprule
+\textbf{Lake} & \textbf{Field / Description} & \textbf{Catalog Field} &
+\textbf{Predicted Family} & \textbf{Predicted Register} & \textbf{Coverage}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r}{\textit{Continued on next page}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+s5 &
+Proper motion magnitude $\sqrt{\mu_\alpha^2 + \mu_\delta^2}$ (mas/yr) &
+\texttt{pmra}, \texttt{pmdec} &
+Kinematic &
+$15/\pi$ or $16/\pi$ &
+$\sim$100\% \\[0.3em]
+
+s6 &
+Effective temperature $T_{\rm eff}$ (K) from GSP-Phot &
+\texttt{teff\_gspphot} &
+EM / Thermal &
+$20/\pi$ or $25/\pi$ &
+$\sim$87\% \\[0.3em]
+
+s7 &
+Surface gravity $\log g$ (cgs) from GSP-Phot &
+\texttt{logg\_gspphot} &
+Structural / Binding &
+$19/\pi$--$22/\pi$ &
+$\sim$87\% \\[0.3em]
+
+s8 &
+Metallicity $[\mathrm{M/H}]$ from GSP-Phot &
+\texttt{mh\_gspphot} &
+Quantum / Chemical &
+$11/\pi$ or $12/\pi$ &
+$\sim$75\% \\[0.3em]
+
+s9 &
+3D space velocity magnitude $\sqrt{v_r^2 + v_t^2}$ (km/s) &
+Derived from \texttt{radial\_velocity}, \texttt{pmra}, \texttt{pmdec},
+\texttt{parallax} &
+Kinematic &
+$15/\pi$ or $16/\pi$ &
+$\sim$100\% \\[0.3em]
+
+s10 &
+Stellar radius $R_\star/R_\odot$ (FLAME pipeline) &
+\texttt{radius\_flame} &
+EM or Structural &
+Open prediction &
+$\sim$65\% \\[0.3em]
+
+s11 &
+Stellar mass $M_\star/M_\odot$ (FLAME pipeline) &
+\texttt{mass\_flame} &
+Structural / Binding &
+$21/\pi$ or $22/\pi$ &
+$\sim$65\% \\
+\end{longtable}
+
+\subsection{Rationale for Each Prediction}
+
+\paragraph{s5 --- Proper motion (kinematic):}
+Proper motion is the angular velocity of a star across the sky. It is a
+kinematic quantity, measuring transverse motion relative to the line of sight,
+distinct from radial velocity (s2) which measures motion along the line of
+sight. The Rosetta Atlas places all velocity-type measurements in the kinematic
+family (registers $15/\pi$--$18/\pi$). \textbf{Prediction: s5 will lock at the
+same kinematic register as s2 ($15/\pi$ or $16/\pi$), demonstrating that two
+independent measurements of stellar motion for the same stars confirm the same
+register family.}
+
+\paragraph{s6 --- Effective temperature (EM/thermal):}
+$T_{\rm eff}$ quantifies the photospheric radiation field of the star ---
+equivalent to the colour temperature of the emitted spectrum. It is an
+electromagnetic quantity measuring how much energy per unit area the star
+radiates. Colour (s4, confirmed at $20/\pi$) and $T_{\rm eff}$ are both
+electromagnetic observables of the same physical process. \textbf{Prediction:
+s6 will lock at the EM family ($20/\pi$ or $25/\pi$), demonstrating that two
+independent EM measurements of the same stars confirm the same register family.}
+
+\paragraph{s7 --- Surface gravity (structural):}
+$\log g$ measures how strongly the stellar surface is gravitationally bound
+--- the ratio of mass to radius-squared (in natural units). It is a structural
+binding quantity. The Rosetta Atlas places binding resistance measurements in
+the Structural/Binding family. \textbf{Prediction: s7 will lock in the
+structural/binding register range ($19/\pi$--$22/\pi$). This is a new
+register territory for stellar data and constitutes a novel prediction.}
+
+\paragraph{s8 --- Metallicity (quantum/chemical):}
+$[\mathrm{M/H}]$ is a dimensionless logarithmic ratio of metal abundance relative
+to hydrogen, compared to solar composition. It encodes the chemical composition
+of the stellar atmosphere at the atomic level --- a quantum/chemical quantity.
+The Rosetta Atlas places chemistry, bond lengths, and atomic spectra at registers
+$11/\pi$--$12/\pi$. \textbf{Prediction: s8 will lock at the quantum/chemical
+register family ($11/\pi$ or $12/\pi$), demonstrating the framework detects
+chemical composition structure at stellar scale.}
+
+\paragraph{s9 --- 3D space velocity (kinematic):}
+The full three-dimensional space velocity combines the line-of-sight component
+(radial velocity, s2) with the plane-of-sky component (transverse velocity,
+derived from proper motion and distance). It is the most complete kinematic
+descriptor of stellar motion. \textbf{Prediction: s9 will lock at the kinematic
+register ($15/\pi$ or $16/\pi$). Together with s2 and s5, this constitutes a
+triple confirmation of kinematic register for the same 1.8M stars using three
+geometrically independent velocity measurements.}
+
+%% ============================================================
+\section{Pre-Registered Predictions: Other Object Pools}
+\label{sec:other_pools}
+
+\subsection{ATNF Pulsar Catalog --- Multi-Attribute Extension}
+
+\textbf{Object pool:} Same 2,527 pulsars as lake k2. Source: ATNF Pulsar
+Catalogue (\url{https://www.atnf.csiro.au/research/pulsar/psrcat/}), accessed
+via \texttt{psrcat} utility.
+
+\begin{table}[h!]
+\centering
+\caption{ATNF pulsar multi-attribute predictions.}
+\begin{tabular}{lp{4.5cm}p{4cm}l}
+\toprule
+\textbf{Lake} & \textbf{Field} & \textbf{Predicted Family} & \textbf{Register} \\
+\midrule
+k2a & Spin-down rate $\dot{P}$ (s/s) & Kinematic secondary & $15/\pi$--$18/\pi$ \\
+k2b & Dispersion measure DM (pc/cm$^3$) & Structural / Positional & Open prediction \\
+k2c & Characteristic age $P/(2\dot{P})$ (yr) & Kinematic / Temporal & $15/\pi$--$18/\pi$ \\
+k2d & Surface B-field $B \propto \sqrt{P\dot{P}}$ (T) & Structural / Binding & $19/\pi$--$22/\pi$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Key rationale:} The dispersion measure (k2b) is particularly diagnostic.
+DM is an integral of free electron density along the line of sight --- a
+completely different physical quantity from spin period. If k2b clusters at a
+different register than k2, this confirms the framework assigns by physical
+type, not by the objects observed. If it clusters at the same register, that is
+equally informative and must be documented verbatim.
+
+\subsection{NASA Exoplanet Archive --- Multi-Attribute Extension}
+
+\textbf{Object pool:} Same 13,521 confirmed exoplanets as lakes p1, p2, p3.
+Source: NASA Exoplanet Archive (\url{https://exoplanetarchive.ipac.caltech.edu/}).
+
+\begin{table}[h!]
+\centering
+\caption{NASA exoplanet multi-attribute predictions.}
+\begin{tabular}{lp{4.5cm}p{4cm}l}
+\toprule
+\textbf{Lake} & \textbf{Field} & \textbf{Predicted Family} & \textbf{Register} \\
+\midrule
+p\_ecc & Orbital eccentricity $e$ (dimensionless) & Structural shape & Null or $19/\pi$ \\
+p\_incl & Orbital inclination $i$ (degrees) & Positional / geometric & Null predicted \\
+p\_transit & Transit duration $T_{14}$ (hours) & Kinematic / temporal & $16/\pi$--$18/\pi$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Note on transit duration:} Transit duration shares the same physical
+units as tidal interval gaps (hours), which confirmed at $17/\pi$--$18/\pi$
+across Atlantic, Gulf, Pacific, and Indian Ocean basins. If transit duration
+also clusters in the kinematic family, this would extend the kinematic principle
+from ocean tides to planetary orbital geometry.
+
+\subsection{CERN Di-Muon --- Multi-Attribute Extension}
+
+\textbf{Object pool:} Same 100,000 collision events as lake h1. Source: CMS
+Open Data Portal, dataset \texttt{Run2012B\_DoubleMuParked}.
+
+\begin{table}[h!]
+\centering
+\caption{CERN di-muon multi-attribute predictions.}
+\begin{tabular}{lp{4.5cm}p{4cm}l}
+\toprule
+\textbf{Lake} & \textbf{Field} & \textbf{Predicted Family} & \textbf{Register} \\
+\midrule
+h1b & Leading muon $p_T$ (GeV/c) & Kinematic & $15/\pi$ or $16/\pi$ \\
+h1c & Sub-leading muon $p_T$ (GeV/c) & Kinematic & $15/\pi$ or $16/\pi$ \\
+h1d & Di-muon pseudorapidity $\eta$ & Positional / geometric & Null predicted \\
+h1e & Relative azimuthal angle $\Delta\phi$ & Geometric & Open prediction \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Significance of h1b and h1c:} Transverse momentum $p_T$ is a kinematic
+quantity at sub-nuclear scale. If h1b/h1c confirm at the kinematic register
+($15/\pi$--$16/\pi$), the kinematic principle extends from stellar velocities
+(km/s, parsec scale) to particle momenta (GeV/c, femtometre scale) --- a span
+of approximately 25 orders of magnitude for the kinematic register alone.
+
+\subsection{SDSS DR16 Galaxies --- Multi-Attribute Extension}
+
+\textbf{Object pool:} Same 1.843 million galaxies as lake g1. Source: SDSS
+DR16 NASA-Sloan Atlas (\url{https://www.sdss.org/}).
+
+\begin{table}[h!]
+\centering
+\caption{SDSS galaxy multi-attribute predictions.}
+\begin{tabular}{lp{4.5cm}p{4cm}l}
+\toprule
+\textbf{Lake} & \textbf{Field} & \textbf{Predicted Family} & \textbf{Register} \\
+\midrule
+g1a & Effective radius $R_e$ (kpc) & EM / Ceiling & $24/\pi$ or $25/\pi$ \\
+g1b & S\'{e}rsic index $n$ & Structural / morphological & $19/\pi$--$22/\pi$ \\
+g1c & Stellar mass $M_\star$ ($M_\odot$) & Structural / Binding & $21/\pi$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\textbf{Significance of g1c:} Galaxy stellar mass and velocity dispersion are
+connected empirically by the Faber-Jackson relation. If g1c (stellar mass)
+confirms at the same register as g1 (velocity dispersion, $z = +62.89$ at
+$21/\pi$), the KLGHS framework provides a geometric account of why the
+Faber-Jackson relation exists: both quantities measure the same physical
+property (resistance to structural dispersal) and therefore occupy the same
+harmonic register.
+
+%% ============================================================
+\section{Dimensionality Falsification Protocol}
+\label{sec:dim_falsification}
+
+\subsection{The Scalarization Framework and Its Physical Meaning}
+
+The KLGHS pipeline employs three distinct scalarization pathways, each encoding
+a different physical relationship between a measurement and geometric tension:
+
+% Corrected Column Widths for A4 Paper
+\begin{table}[h!]
+\centering
+\caption{KLGHS scalarization pathways.}
+\begin{tabular}{p{2.8cm} p{5.5cm} p{6cm}}
+\toprule
+\textbf{Transform} & \textbf{Formula} & \textbf{Physical Application} \\
+\midrule
+Log-standard & $s = \log(1+x)\,/\,\log(\kgeo)$ &
+  Quantities directly proportional to geometric accumulation: distance, velocity,
+  mass, duration, binding energy \\[0.5em]
+Log-inverse & $s = \log(1+1/x)\,/\,\log(\kgeo)$ &
+  Quantities inversely proportional to geometric tension: wavelength, period
+  of high-energy transitions \\[0.5em]
+Log-volumetric & $s = \log(1+x^{1/3})\,/\,\log(\kgeo)$ or
+  $s = \log(1+x^3)\,/\,\log(\kgeo)$ &
+  3D volumetric properties: bulk modulus, compressibility, material stiffness \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The choice of scalarization is not arbitrary. It is determined by the physical
+dimensionality of the measurement: whether the attribute is intrinsically
+one-dimensional (a speed, a duration, an energy), two-dimensional (an area,
+a cross-section), three-dimensional (a volume, a bulk elastic property), or
+an inverse quantity. Applying the wrong scalarization is equivalent to asking
+the wrong physical question.
+
+\subsection{The Empirical Precedent: The Materials Domain Collapse}
+\label{sec:materials_collapse}
+
+\textbf{This is not a hypothetical test. We have observed this effect.}
+
+During the construction of the Materials domain lake (bulk modulus and
+compressibility data, $n = 33{,}973$ records, confirmed at $19/\pi$,
+$z = +69.77$), an initial processing error applied the 1D log-standard
+scalarization to what is intrinsically a 3D volumetric property. The result was
+immediate and unambiguous: the signal collapsed into the noise floor. No register
+exceeded the $z > 3.0$ spectral identification threshold. The domain appeared
+as a pure null.
+
+When the correct volumetric scalarization was applied, the signal instantly
+locked at $19/\pi$ with $z = +69.77$. This accidental discovery provides direct empirical evidence that:
+\begin{enumerate}
+  \item The KLGHS pipeline does not impose harmonic structure on all continuous
+        data. It only detects structure that corresponds to the physical
+        dimensionality supplied.
+  \item The scalarization formula is a \emph{physical choice}, not a
+        mathematical convenience. The wrong formula destroys the signal.
+  \item The lattice geometry ``asks a specific question'' about the data. It
+        only receives an answer when the question matches the physical nature
+        of the attribute.
+\end{enumerate}
+
+In Volume 11, we formally document the Materials domain collapse under wrong
+scalarization as a sovereign result, running it through the full MD5-verified
+pipeline engine for inclusion in the official dataset record.
+
+\subsection{Why This Test Is Scientifically Critical}
+
+The strongest technically-competent version of the skeptical objection to the
+KishLattice framework is the following:
+
+\begin{quote}
+\textit{``The log-modulo transform imposes harmonic structure on any sufficiently
+large continuous dataset regardless of physical content. The observed z-scores
+are artifacts of the mathematical pipeline rather than properties of the
+physical data.''}
+\end{quote}
+
+This objection cannot be answered by showing higher z-scores. It must be
+answered by demonstrating that the pipeline \emph{fails} when the physical
+premise is wrong. A physical spectroscope --- such as a diffraction grating or a mass
+spectrometer --- only reveals structure that is physically present in the input.
+If you illuminate a diffraction grating with incoherent light, you see no
+interference pattern. If you place the wrong sample in a mass spectrometer, you
+read the wrong mass. The instrument does not manufacture signal from noise; it
+reveals signal that was already there.
+
+The Dimensionality Falsification Protocol establishes that KLGHS behaves as a
+physical spectroscope:
+\begin{itemize}
+  \item Correct physical question $\rightarrow$ signal locked at predicted register.
+  \item Wrong physical question $\rightarrow$ signal collapses to noise floor.
+\end{itemize}
+
+\textbf{This is the most direct possible answer to the transform-artifact
+objection.} If the log-modulo mathematics were the source of the signal, it
+would persist regardless of which scalarization formula is applied. If the
+signal collapses under wrong dimensionality, the mathematics is not the source.
+The physics is.
+
+\subsection{Orthogonal Null Targets and Predictions}
+
+We define four \emph{orthogonal null} tests. Each takes a confirmed strong
+domain and intentionally applies the wrong scalarization formula.
+\vspace{0.5em}
+
+\paragraph{Orthogonal Null 1: Gaia Radial Velocity (s2\_wrong)}
+
+\textbf{Confirmed domain:} s2, Gaia DR3 radial velocity, confirmed at $15/\pi$
+with $z_{\rm real} = +91.80$.
+
+\textbf{Correct scalarization:} Log-standard (1D kinematic):
+\[
+  s_{\rm correct} = \frac{\log(1 + v_r)}{\log(16/\pi)}
+\]
+
+\textbf{Intentional error --- volumetric scalarization applied to a 1D kinematic
+quantity:}
+\[
+  s_{\rm wrong} = \frac{\log(1 + v_r^3)}{\log(16/\pi)}
+\]
+
+\textbf{Prediction:} $z_{\rm wrong} < 3.0$ at all registers. Complete phase
+destruction.
+
+\textbf{Falsification condition:} If $z_{\rm wrong} \geq 5.0$ at any register,
+the transform-artifact hypothesis gains support and must be investigated before
+submission.
+\vspace{0.5em}
+
+\paragraph{Orthogonal Null 2: ATNF Pulsar Spin Period (k2\_wrong)}
+
+\textbf{Confirmed domain:} k2, ATNF pulsar spin period, confirmed STRONG in
+kinematic family.
+
+\textbf{Correct scalarization:} Log-standard (1D temporal/kinematic):
+\[
+  s_{\rm correct} = \frac{\log(1 + P)}{\log(16/\pi)}
+\]
+
+\textbf{Intentional error --- log-inverse (energy-type) scalarization applied
+to a period:}
+\[
+  s_{\rm wrong} = \frac{\log(1 + 1/P)}{\log(16/\pi)}
+\]
+
+\textbf{Prediction:} $z_{\rm wrong} < 3.0$ at all registers. The spin period is
+not an inverse-type quantity; the log-inverse formula has no physical
+justification for this domain.
+\vspace{0.5em}
+
+\paragraph{Orthogonal Null 3: Exoplanet Orbital Period (p1\_wrong)}
+
+\textbf{Confirmed domain:} p1, NASA exoplanet orbital periods, confirmed STRONG
+at $22/\pi$, $z_{\rm real} \approx +78$.
+
+\textbf{Correct scalarization:} Log-standard (1D temporal/kinematic):
+\[
+  s_{\rm correct} = \frac{\log(1 + P_{\rm orb})}{\log(16/\pi)}
+\]
+
+\textbf{Intentional error --- volumetric scalarization applied to a temporal
+quantity:}
+\[
+  s_{\rm wrong} = \frac{\log(1 + P_{\rm orb}^3)}{\log(16/\pi)}
+\]
+
+\textbf{Prediction:} $z_{\rm wrong} < 3.0$ at all registers. An orbital period
+in days is not a volumetric quantity; the cube transform has no dimensional
+justification.
+
+\textbf{Additional diagnostic:} The companion lake p2 (orbital radius, same
+planets) is already an anti-signal. The contrast between p1\_correct (STRONG),
+p1\_wrong (predicted NULL), and p2 (anti-signal) constitutes a complete
+picture from a single planetary dataset.
+\vspace{0.5em}
+
+\paragraph{Orthogonal Null 4: Materials Domain Formal Documentation}
+
+\textbf{Historical precedent:} During lake construction, bulk modulus data
+was accidentally processed with 1D log-standard scalarization. Signal collapsed
+to noise floor. Applying correct volumetric scalarization restored signal at
+$19/\pi$, $z = +69.77$.
+
+\textbf{Volume 11 action:} Run the incorrect 1D scalarization on the Materials
+domain through the Vol 11 MD5-verified engine. Document the resulting
+$z_{\rm wrong}$ vector formally in \texttt{z\_scores\_master.json}.
+
+\textbf{Prediction:} All registers return $z < 3.0$ under the wrong
+scalarization. This converts a historical observation into a sovereign pipeline
+result with full chain of custody.
+
+\subsection{Summary Table: Orthogonal Null Pre-Registrations}
+
+% Corrected Column Widths for A4 Paper
+\begin{table}[h!]
+\centering
+\caption{Orthogonal null pre-registered predictions.}
+\begin{tabular}{l p{4.0cm} l p{4.5cm} l}
+\toprule
+\textbf{Lake} & \textbf{Source} & \textbf{Real $z$} &
+\textbf{Wrong Formula} & \textbf{Predicted $z_{\rm wrong}$} \\
+\midrule
+s2\_wrong & Gaia radial velocity & $+91.80$ & $s = \log(1+v^3)/\log(\kgeo)$ & $< 3.0$ \\
+k2\_wrong & ATNF spin period & STRONG & $s = \log(1+1/P)/\log(\kgeo)$ & $< 3.0$ \\
+p1\_wrong & Exoplanet orbital period & $\sim+78$ & $s = \log(1+P^3)/\log(\kgeo)$ & $< 3.0$ \\
+mat\_wrong & Materials bulk modulus & $+69.77$ & $s = \log(1+x)/\log(\kgeo)$ (1D) & $< 3.0$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+%% ============================================================
+\section{Complete Predictions Register}
+\label{sec:predictions_register}
+
+% Corrected Column Widths for A4 Paper
+\begin{longtable}{p{1.5cm} p{5.0cm} p{3.0cm} p{3.5cm} p{1.5cm}}
+\caption{Full pre-registration predictions table. All lakes to be built
+\emph{after} Zenodo DOI assignment.}
+\label{tab:full_predictions}\\
+\toprule
+\textbf{Lake ID} & \textbf{Physical Attribute} & \textbf{Source Catalog} &
+\textbf{Predicted Family} & \textbf{Status} \\
+\midrule
+\endfirsthead
+\multicolumn{5}{c}{\textit{(Table \ref{tab:full_predictions} continued)}}\\
+\toprule
+\textbf{Lake ID} & \textbf{Physical Attribute} & \textbf{Source Catalog} &
+\textbf{Predicted Family} & \textbf{Status} \\
+\midrule
+\endhead
+\midrule \multicolumn{5}{r}{\textit{Continued on next page}}\\
+\endfoot
+\bottomrule
+\endlastfoot
+
+\multicolumn{5}{l}{\textit{Gaia Stellar Pool Extensions}}\\[0.2em]
+s5 & Proper motion magnitude (mas/yr) & Gaia DR3 & Kinematic ($15/\pi$--$16/\pi$) & \pending \\
+s6 & $T_{\rm eff}$ (K) & Gaia DR3 GSP-Phot & EM / Thermal ($20/\pi$, $25/\pi$) & \pending \\
+s7 & $\log g$ (cgs) & Gaia DR3 GSP-Phot & Structural ($19/\pi$--$22/\pi$) & \pending \\
+s8 & $[\mathrm{M/H}]$ metallicity & Gaia DR3 GSP-Phot & Quantum/Chemical ($11/\pi$, $12/\pi$) & \pending \\
+s9 & 3D space velocity (km/s) & Gaia DR3 derived & Kinematic ($15/\pi$--$16/\pi$) & \pending \\
+s10 & Stellar radius ($R_\odot$) & Gaia DR3 FLAME & EM or Structural (open) & \pending \\
+s11 & Stellar mass ($M_\odot$) & Gaia DR3 FLAME & Structural ($21/\pi$, $22/\pi$) & \pending \\[0.3em]
+
+\multicolumn{5}{l}{\textit{ATNF Pulsar Extensions}}\\[0.2em]
+k2a & Spin-down rate $\dot{P}$ (s/s) & ATNF & Kinematic secondary & \pending \\
+k2b & Dispersion measure DM & ATNF & Structural / positional (open) & \pending \\
+k2c & Characteristic age (yr) & ATNF derived & Kinematic / temporal & \pending \\
+k2d & Surface B-field (T) & ATNF derived & Structural ($19/\pi$--$22/\pi$) & \pending \\[0.3em]
+
+\multicolumn{5}{l}{\textit{Exoplanet Extensions}}\\[0.2em]
+p\_ecc & Orbital eccentricity $e$ & NASA Exoplanet Archive & Null predicted & \pending \\
+p\_incl & Inclination angle (deg) & NASA Exoplanet Archive & Null predicted & \pending \\
+p\_transit & Transit duration (hr) & NASA Exoplanet Archive & Kinematic ($16/\pi$--$18/\pi$) & \pending \\[0.3em]
+
+\multicolumn{5}{l}{\textit{CERN Di-Muon Extensions}}\\[0.2em]
+h1b & Leading muon $p_T$ (GeV/c) & CMS Open Data & Kinematic ($15/\pi$, $16/\pi$) & \pending \\
+h1c & Sub-leading muon $p_T$ (GeV/c) & CMS Open Data & Kinematic ($15/\pi$, $16/\pi$) & \pending \\
+h1d & Di-muon pseudorapidity $\eta$ & CMS Open Data & Null predicted & \pending \\
+h1e & Relative azimuthal angle $\Delta\phi$ & CMS Open Data & Open prediction & \pending \\[0.3em]
+
+\multicolumn{5}{l}{\textit{SDSS Galaxy Extensions}}\\[0.2em]
+g1a & Effective radius $R_e$ (kpc) & SDSS NSA & EM / Ceiling ($24/\pi$, $25/\pi$) & \pending \\
+g1b & S\'{e}rsic index $n$ & SDSS NSA & Structural ($19/\pi$--$22/\pi$) & \pending \\
+g1c & Stellar mass $M_\star$ ($M_\odot$) & SDSS NSA & Structural ($21/\pi$) & \pending \\[0.3em]
+
+\multicolumn{5}{l}{\textit{Dimensionality Falsification (Orthogonal Nulls)}}\\[0.2em]
+s2\_wrong & Gaia velocity, wrong (cubic) scalar & Gaia DR3 & $z < 3.0$ all registers & \pending \\
+k2\_wrong & Pulsar period, wrong (inverse) scalar & ATNF & $z < 3.0$ all registers & \pending \\
+p1\_wrong & Orbital period, wrong (cubic) scalar & NASA EPA & $z < 3.0$ all registers & \pending \\
+mat\_wrong & Materials, wrong (1D) scalar & AFLOW / CSD & $z < 3.0$ all registers & \pending \\
+
+\end{longtable}
+
+%% ============================================================
+\section{Falsification Conditions}
+\label{sec:falsification}
+
+The following conditions, if observed, would constitute a meaningful challenge
+to the KLGHS framework and must be investigated before any submission:
+
+\begin{enumerate}
+  \item \textbf{Orthogonal null survives:} Any orthogonal null lake returns
+  $z \geq 5.0$ at any register. This would indicate the signal persists
+  regardless of dimensional correctness and supports the transform-artifact
+  hypothesis.
+  \item \textbf{Same-object register inconsistency:} Two kinematic attributes
+  (e.g.\ s2 and s5) of the same 1.8M stars lock at different register
+  \emph{families} (e.g.\ one at kinematic, one at structural). The register
+  family taxonomy predicts they should agree; if they do not, the taxonomy
+  requires revision.
+  \item \textbf{Chaos null breach:} Any confirmed domain's z-score, on
+  re-run through the Vol 11 engine, departs from its Vol 10 published value
+  by more than the documented Monte Carlo variance band ($\pm 20\%$).
+  \item \textbf{Systematic register drift:} If all new attribute lakes cluster
+  at a single unexpected register regardless of physical type (e.g.\ all return
+  $22/\pi$), this suggests a dataset-level artifact rather than a physical
+  signal.
+\end{enumerate}
+
+A pre-registration that only lists expected confirmations is not a pre-registration
+--- it is an announcement. The conditions above define the empirical boundaries
+of the framework and are documented here in good faith.
+
+%% ============================================================
+\section{One-Lane Discipline: Why Sovereign Lakes Are Non-Negotiable}
+\label{sec:one_lane}
+
+One reviewer may ask: why not combine all attributes into a joint analysis?
+This section documents the scientific rationale for maintaining strict
+one-lake-one-question discipline.
+
+\begin{enumerate}
+  \item \textbf{Structural immunity to the cherry-picking objection.}
+  If multiple attributes are combined into one lake, a referee can always ask:
+  ``Did you try all combinations and report only the best?'' A Zenodo timestamp
+  on each individual lake prediction, predating its construction, makes this
+  objection structurally impossible. There is nothing to select after the fact
+  when every selection is documented before the fact.
+
+  \item \textbf{Minimum replication burden.}
+  Any single sovereign lake can be independently replicated by any researcher
+  with four hours, a laptop, and a public catalog. A merged multi-attribute lake
+  requires understanding the merging logic, transform choices, and weighting
+  scheme. Simplicity is the replication standard.
+
+  \item \textbf{Storage cost is the price of honesty.}
+  Separate lakes cost disk space and pipeline runtime. These costs are
+  deliberately accepted. The benefit is that no one can question the process.
+
+  \item \textbf{Null results are findings.}
+  When p\_incl (orbital inclination) returns a null, that is a result. It
+  documents that inclination angle is not a quantity that couples to the
+  harmonic register structure. In a merged lake, a null attribute suppresses
+  a confirming attribute and the null is invisible. In sovereign lakes, every
+  outcome is on the record.
+
+  \item \textbf{The pattern of confirmations and nulls is itself the finding.}
+  Kinematic quantities confirm. Positional quantities produce anti-signal or
+  null. EM quantities confirm at the EM ceiling. This taxonomy --- which domains
+  light up and which do not --- is the empirical foundation of the Rosetta Atlas.
+  It is only visible when each test is isolated.
+\end{enumerate}
+
+\textbf{We are being judged.} Every methodological decision in this programme
+is made with the awareness that the results will face the highest level of
+scrutiny. The one-lane discipline is not a constraint. It is the primary source
+of the framework's credibility.
+
+%% ============================================================
+\section*{Acknowledgements}
+
+The authors thank the ESA Gaia mission, the ATNF pulsar team, NASA for the
+Exoplanet Archive, CERN for the CMS Open Data initiative, and the Sloan
+Digital Sky Survey collaboration for maintaining the public catalogs that
+underpin this programme. All data sources are publicly accessible without
+institutional access requirements.
+
+%% ============================================================
+\section*{Data Availability}
+
+All pipeline code, lake build scripts, and the MD5-verified unified master
+dataset are available at:\\
+\url{https://github.com/TimothyKish/Holographic-Resonance-The-Geometry-of-a-Quantized-Universe}
+
+The pipeline requires Python 3.x with numpy, scipy, and pandas. No proprietary
+libraries or databases are required.
+
+%% ============================================================
+\begin{thebibliography}{99}
+
+\bibitem{rosetta2026}
+Kish, T.J., Kish, P.A., Kish, L.A., \& Kish, M.A. (2026).
+\textit{The Rosetta Atlas: The Master Equation of the Kish Lattice Theory.}
+Zenodo. \url{https://doi.org/10.5281/zenodo.19939949}
+
+\bibitem{vol10}
+Kish, T.J., Kish, P.A., Kish, L.A., \& Kish, M.A. (2026).
+\textit{KishLattice Geometric Harmonic Spectroscopy: The Deep Survey.}
+Zenodo. \url{https://doi.org/10.5281/zenodo.20279208}
+
+\bibitem{vol9}
+Kish, T.J. et al. (2026).
+\textit{KishLattice Geometric Harmonic Spectroscopy: The First Survey of a New Field.}
+Zenodo. \url{https://doi.org/10.5281/zenodo.19935604}
+
+\bibitem{vol9prereg}
+Kish, T.J. \& Kish, M.A. (2026).
+\textit{Volume 9 --- Predictions Pre-Registration.}
+Zenodo. \url{https://doi.org/10.5281/zenodo.19702023}
+
+\bibitem{gaia_dr3}
+Gaia Collaboration (2023).
+\textit{Gaia Data Release 3: Summary of the content and survey properties.}
+\textit{Astronomy \& Astrophysics}, 674, A1.
+
+\bibitem{atnf}
+Manchester, R.N. et al. (2005).
+\textit{The Australia Telescope National Facility Pulsar Catalogue.}
+\textit{The Astronomical Journal}, 129, 1993.
+
+\end{thebibliography}
+
+\end{document}

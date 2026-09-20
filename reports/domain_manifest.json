@@ -1,0 +1,32 @@
+{
+  "biology_backbone_top8000": {
+    "file": "b4_pdb_protein_promoted.jsonl",
+    "field": "angle_degrees",
+    "x_label": "Backbone Dihedral Angle (Degrees)",
+    "title": "B4 PDB Protein Backbone (Top8000 High-Res)"
+  },
+  "biology_backbone_full": {
+    "file": "b5_pdb_full_protein_promoted.jsonl",
+    "field": "angle_degrees",
+    "x_label": "Backbone Dihedral Angle (Degrees)",
+    "title": "B5 PDB Protein Backbone (Full Catalog)"
+  },
+  "subnuclear_mass": {
+    "file": "h1_cern_lhc_promoted.jsonl",
+    "field": "invariant_mass_gev",
+    "x_label": "Invariant Mass (GeV)",
+    "title": "CERN Di-Muon Mass Spectrum"
+  },
+  "orbital_ttv": {
+    "file": "p4_ttv_promoted.jsonl",
+    "field": "ttv_absolute_minutes",
+    "x_label": "Transit Timing Variation (Minutes)",
+    "title": "Kepler TTVs"
+  },
+  "planetary_pacific": {
+    "file": "t2d_pacific_promoted.jsonl",
+    "field": "interval_hours",
+    "x_label": "Tidal Interval (Hours)",
+    "title": "Pacific Open-Ocean Tides"
+  }
+}

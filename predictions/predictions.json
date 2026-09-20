@@ -1,0 +1,86 @@
+{
+  "seismic_japan": {
+    "predicted": [
+      "17/pi",
+      "18/pi"
+    ],
+    "title": "U3: Sovereign Japan Trench (Primary Test)"
+  },
+  "seismic_reference": {
+    "predicted": [],
+    "title": "U1/U2/U4: Combined Seismic Reference Groups"
+  },
+  "galactic_mass": {
+    "predicted": [
+      "19/pi",
+      "22/pi"
+    ],
+    "title": "G1c: Galactic Mass (Virial Proxy)"
+  },
+  "atomic_ionisation": {
+    "predicted": [
+      "7/pi",
+      "14/pi"
+    ],
+    "title": "Q8: Deep Atomic Ionisation Energies (Empirical)"
+  },
+  "biology_chirality": {
+    "predicted": [
+      "7/pi",
+      "14/pi"
+    ],
+    "title": "B1: Molecular Chirality (Empirical)"
+  },
+  "orbital_wrongbox": {
+    "predicted": [],
+    "title": "NULL TEST: P1 Orbital Period \u2014 Cubic Scalar Falsification"
+  },
+  "stellar_velocity_wrongbox": {
+    "predicted": [],
+    "title": "NULL TEST: S2 Stellar Velocity \u2014 Cubic Scalar Falsification"
+  },
+  "pulsar_period_wrongbox": {
+    "predicted": [],
+    "title": "NULL TEST: K2 Pulsar Period \u2014 Inverse Scalar Falsification"
+  },
+  "materials_wrongbox": {
+    "predicted": [],
+    "title": "NULL TEST: Materials Bulk Modulus \u2014 1D Scalar Falsification (Historical Precedent)"
+  },
+  "stellar_rotation": {
+    "predicted": [
+      "16/pi",
+      "17/pi",
+      "18/pi"
+    ],
+    "title": "K2: Pulsar / Stellar Rotation (Baseline)"
+  },
+  "stellar_kinematic": {
+    "predicted": [
+      "16/pi",
+      "17/pi",
+      "18/pi"
+    ],
+    "title": "S2: Stellar Transverse Velocity"
+  },
+  "biology_backbone": {
+    "predicted": [
+      "16/pi",
+      "19/pi",
+      "25/pi"
+    ],
+    "title": "B5: Protein Backbone Geometry (Triple Lock)"
+  },
+  "orbital_ttv": {
+    "predicted": [
+      "22/pi"
+    ],
+    "title": "P4: Kepler Transit Timing Variations"
+  },
+  "subnuclear_mass": {
+    "predicted": [
+      "21/pi"
+    ],
+    "title": "H1: CERN Di-Muon Invariant Mass"
+  }
+}

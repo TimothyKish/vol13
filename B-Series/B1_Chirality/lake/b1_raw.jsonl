@@ -1,0 +1,78 @@
+{"molecule_name": "L-Alanine", "specific_rotation_deg": 1.8, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Alanine", "specific_rotation_deg": -1.8, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Arginine", "specific_rotation_deg": 12.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Arginine", "specific_rotation_deg": -12.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Asparagine", "specific_rotation_deg": -5.3, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Asparagine", "specific_rotation_deg": 5.3, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Aspartic Acid", "specific_rotation_deg": 25.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Aspartic Acid", "specific_rotation_deg": -25.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Cysteine", "specific_rotation_deg": 6.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Cysteine", "specific_rotation_deg": -6.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Glutamine", "specific_rotation_deg": 6.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Glutamine", "specific_rotation_deg": -6.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Glutamic Acid", "specific_rotation_deg": 31.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Glutamic Acid", "specific_rotation_deg": -31.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Histidine", "specific_rotation_deg": -38.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Histidine", "specific_rotation_deg": 38.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Isoleucine", "specific_rotation_deg": 12.4, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Isoleucine", "specific_rotation_deg": -12.4, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Leucine", "specific_rotation_deg": 15.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Leucine", "specific_rotation_deg": -15.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Lysine", "specific_rotation_deg": 13.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Lysine", "specific_rotation_deg": -13.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Methionine", "specific_rotation_deg": -30.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Methionine", "specific_rotation_deg": 30.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Phenylalanine", "specific_rotation_deg": -34.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Phenylalanine", "specific_rotation_deg": 34.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Proline", "specific_rotation_deg": -86.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Proline", "specific_rotation_deg": 86.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Serine", "specific_rotation_deg": -7.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Serine", "specific_rotation_deg": 7.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Threonine", "specific_rotation_deg": -28.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Threonine", "specific_rotation_deg": 28.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Tryptophan", "specific_rotation_deg": -33.7, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Tryptophan", "specific_rotation_deg": 33.7, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Tyrosine", "specific_rotation_deg": -10.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Tyrosine", "specific_rotation_deg": 10.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Valine", "specific_rotation_deg": 5.6, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Valine", "specific_rotation_deg": -5.6, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Glucose", "specific_rotation_deg": 52.7, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Glucose", "specific_rotation_deg": -52.7, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Fructose", "specific_rotation_deg": -92.4, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Fructose", "specific_rotation_deg": 92.4, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Galactose", "specific_rotation_deg": 80.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Galactose", "specific_rotation_deg": -80.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Mannose", "specific_rotation_deg": 14.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Mannose", "specific_rotation_deg": -14.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "Sucrose", "specific_rotation_deg": 66.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "Lactose", "specific_rotation_deg": 55.4, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "Maltose", "specific_rotation_deg": 130.4, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Ribose", "specific_rotation_deg": -23.7, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Arabinose", "specific_rotation_deg": -105.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Arabinose", "specific_rotation_deg": 105.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Xylose", "specific_rotation_deg": 18.8, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Xylose", "specific_rotation_deg": -18.8, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(+)-Limonene", "specific_rotation_deg": 125.6, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(-)-Limonene", "specific_rotation_deg": -125.6, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(+)-Carvone", "specific_rotation_deg": 61.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(-)-Carvone", "specific_rotation_deg": -61.2, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(+)-Menthol", "specific_rotation_deg": 50.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(-)-Menthol", "specific_rotation_deg": -50.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(+)-Pinene", "specific_rotation_deg": 51.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(-)-Pinene", "specific_rotation_deg": -51.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(+)-Camphor", "specific_rotation_deg": 44.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(-)-Camphor", "specific_rotation_deg": -44.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(+)-Tartaric Acid", "specific_rotation_deg": 12.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(-)-Tartaric Acid", "specific_rotation_deg": -12.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-DOPA", "specific_rotation_deg": -13.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-DOPA", "specific_rotation_deg": 13.1, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(+)-Ibuprofen", "specific_rotation_deg": 54.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(-)-Ibuprofen", "specific_rotation_deg": -54.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Epinephrine", "specific_rotation_deg": -50.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Epinephrine", "specific_rotation_deg": 50.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(+)-Naproxen", "specific_rotation_deg": 66.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(-)-Naproxen", "specific_rotation_deg": -66.0, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "L-Ascorbic Acid", "specific_rotation_deg": 20.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "D-Ascorbic Acid", "specific_rotation_deg": -20.5, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(+)-Amphetamine", "specific_rotation_deg": 35.6, "source": "Standard Empirical References [alpha]_D"}
+{"molecule_name": "(-)-Amphetamine", "specific_rotation_deg": -35.6, "source": "Standard Empirical References [alpha]_D"}

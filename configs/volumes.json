@@ -1,0 +1,660 @@
+{
+  "__comment__": "Vol 12 integrated unified table. Paths verified against filesystem tree 2026-08-22.",
+  "__audit_note__": "Field paths resolved by scripts/inspect_schema.py. same_object_group added so pinch builder can mask within-group pairings. GATED lakes produce undefined output or have unresolved provenance - each carries a __note__ stating why. b3_amino and t1_biological held pending a transform ruling.",
+  "__pinch_rule__": "Pairings where both lakes share the same same_object_group MUST be masked: they measure different attributes of one population and will pinch for reasons that are not cross-domain physics.",
+  "volumes": {
+    "L_emission_nist": {
+      "path": "lakes/inputs_promoted/L_emission_nist_promoted.jsonl",
+      "enabled": true,
+      "domain": "quantum_transitional",
+      "pinch_slot": "vertex_emission",
+      "scale_rank": 0,
+      "__note__": "ANCHOR. 16/pi z=+28.5 regression-verified."
+    },
+    "L_igrf": {
+      "path": "lakes/inputs_promoted/L_igrf_promoted.jsonl",
+      "enabled": true,
+      "domain": "geomagnetic",
+      "pinch_slot": "planetary_harmonics",
+      "scale_rank": 2
+    },
+    "L_beta_decay": {
+      "path": "lakes/inputs_promoted/L_beta_decay_promoted.jsonl",
+      "enabled": true,
+      "domain": "electron_beta",
+      "pinch_slot": "electron_kinematic_beta",
+      "scale_rank": 0
+    },
+    "q4_nuclear": {
+      "path": "lakes/inputs_promoted/q4_nuclear_promoted.jsonl",
+      "enabled": true,
+      "domain": "nuclear_binding",
+      "pinch_slot": "nuclear_binding",
+      "scale_rank": 0
+    },
+    "q5_decay": {
+      "path": "lakes/inputs_promoted/q5_decay_promoted.jsonl",
+      "enabled": true,
+      "domain": "nuclear_decay",
+      "pinch_slot": "nuclear_decay",
+      "scale_rank": 0
+    },
+    "q8_ionisation": {
+      "path": "lakes/inputs_promoted/q8_ionisation_promoted.jsonl",
+      "enabled": true,
+      "domain": "atomic_ionisation",
+      "pinch_slot": "atomic_ionisation",
+      "scale_rank": 0
+    },
+    "b1_chirality": {
+      "path": "lakes/inputs_promoted/b1_chirality_promoted.jsonl",
+      "enabled": true,
+      "domain": "biology_chirality",
+      "pinch_slot": "biology_chirality",
+      "scale_rank": 1
+    },
+    "b3_amino": {
+      "path": "lakes/inputs_promoted/b3_amino_promoted.jsonl",
+      "enabled": false,
+      "domain": "biology_amino",
+      "pinch_slot": "biology_amino",
+      "scale_rank": 1,
+      "__note__": "HELD PENDING RULING: lake carries only a precomputed scalar, no raw field at any depth. Record domain is the pooled \"biology\". t1_biological may additionally be in natural log rather than log base k_geo (range endpoints match ln(7) and ln(10) to six figures). Re-enable once the transform is established."
+    },
+    "t1_biological": {
+      "path": "lakes/inputs_promoted/t1_biological_promoted.jsonl",
+      "enabled": false,
+      "domain": "biology_other",
+      "pinch_slot": "biology_other",
+      "scale_rank": 1,
+      "__note__": "HELD PENDING RULING: lake carries only a precomputed scalar, no raw field at any depth. Record domain is the pooled \"biology\". t1_biological may additionally be in natural log rather than log base k_geo (range endpoints match ln(7) and ln(10) to six figures). Re-enable once the transform is established."
+    },
+    "t2b_atlantic": {
+      "path": "lakes/inputs_promoted/t2b_atlantic_promoted.jsonl",
+      "enabled": true,
+      "domain": "planetary_atlantic",
+      "pinch_slot": "planetary_atlantic",
+      "scale_rank": 2
+    },
+    "t2c_gulf": {
+      "path": "lakes/inputs_promoted/t2c_gulf_promoted.jsonl",
+      "enabled": true,
+      "domain": "planetary_gulf",
+      "pinch_slot": "planetary_gulf",
+      "scale_rank": 2
+    },
+    "t2d_pacific": {
+      "path": "lakes/inputs_promoted/t2d_pacific_promoted.jsonl",
+      "enabled": true,
+      "domain": "planetary_pacific",
+      "pinch_slot": "planetary_pacific",
+      "scale_rank": 2
+    },
+    "t2g_indian": {
+      "path": "lakes/inputs_promoted/t2g_indian_promoted.jsonl",
+      "enabled": true,
+      "domain": "planetary_indian",
+      "pinch_slot": "planetary_indian",
+      "scale_rank": 2
+    },
+    "u1_usgs_san_andreas": {
+      "path": "lakes/inputs_promoted/u1_usgs_san_andreas_promoted.jsonl",
+      "enabled": true,
+      "domain": "seismic_reference",
+      "pinch_slot": "seismic_reference",
+      "scale_rank": 2
+    },
+    "u2_usgs_cascadia": {
+      "path": "lakes/inputs_promoted/u2_usgs_cascadia_promoted.jsonl",
+      "enabled": true,
+      "domain": "seismic_reference",
+      "pinch_slot": "seismic_reference",
+      "scale_rank": 2
+    },
+    "u4_usgs_anatolian": {
+      "path": "lakes/inputs_promoted/u4_usgs_anatolian_promoted.jsonl",
+      "enabled": true,
+      "domain": "seismic_reference",
+      "pinch_slot": "seismic_reference",
+      "scale_rank": 2
+    },
+    "u3_usgs_japan_trench": {
+      "path": "lakes/inputs_promoted/u3_usgs_japan_trench_promoted.jsonl",
+      "enabled": true,
+      "domain": "seismic_japan",
+      "pinch_slot": "seismic_japan",
+      "scale_rank": 2
+    },
+    "k3_solar_cycle": {
+      "path": "lakes/inputs_promoted/k3_solar_cycle_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_cycle",
+      "pinch_slot": "stellar_cycle",
+      "scale_rank": 3
+    },
+    "k2a_spindown": {
+      "path": "lakes/inputs_promoted/k2a_spindown_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_spindown",
+      "pinch_slot": "stellar_spindown",
+      "scale_rank": 3,
+      "same_object_group": "same_object:atnf_pulsars"
+    },
+    "k2b_dm": {
+      "path": "lakes/inputs_promoted/k2b_dm_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_dm",
+      "pinch_slot": "stellar_dm",
+      "scale_rank": 3,
+      "same_object_group": "same_object:atnf_pulsars"
+    },
+    "k2c_age": {
+      "path": "lakes/inputs_promoted/k2c_age_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_age",
+      "pinch_slot": "stellar_age",
+      "scale_rank": 3,
+      "same_object_group": "same_object:atnf_pulsars"
+    },
+    "k2d_bfield": {
+      "path": "lakes/inputs_promoted/k2d_bfield_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_bfield",
+      "pinch_slot": "stellar_bfield",
+      "scale_rank": 3,
+      "same_object_group": "same_object:atnf_pulsars"
+    },
+    "h1_cern_lhc": {
+      "path": "lakes/inputs_promoted/h1_cern_lhc_promoted.jsonl",
+      "enabled": true,
+      "domain": "subnuclear_mass",
+      "pinch_slot": "subnuclear_mass",
+      "scale_rank": 0,
+      "same_object_group": "same_object:cms_dimuon"
+    },
+    "h1b_pt_lead": {
+      "path": "lakes/inputs_promoted/h1b_pt_lead_promoted.jsonl",
+      "enabled": true,
+      "domain": "subnuclear_pt_lead",
+      "pinch_slot": "subnuclear_pt_lead",
+      "scale_rank": 0,
+      "same_object_group": "same_object:cms_dimuon"
+    },
+    "h1c_pt_sublead": {
+      "path": "lakes/inputs_promoted/h1c_pt_sublead_promoted.jsonl",
+      "enabled": true,
+      "domain": "subnuclear_pt_sublead",
+      "pinch_slot": "subnuclear_pt_sublead",
+      "scale_rank": 0,
+      "same_object_group": "same_object:cms_dimuon"
+    },
+    "h1d_eta": {
+      "path": "lakes/inputs_promoted/h1d_eta_promoted.jsonl",
+      "enabled": true,
+      "domain": "subnuclear_eta",
+      "pinch_slot": "subnuclear_eta",
+      "scale_rank": 0,
+      "same_object_group": "same_object:cms_dimuon"
+    },
+    "g1b_sersic": {
+      "path": "lakes/inputs_promoted/g1b_sersic_promoted.jsonl",
+      "enabled": true,
+      "domain": "galactic_sersic",
+      "pinch_slot": "galactic_sersic",
+      "scale_rank": 4,
+      "same_object_group": "same_object:sdss_dr16_galaxies"
+    },
+    "g1c_mass": {
+      "path": "lakes/inputs_promoted/g1c_mass_promoted.jsonl",
+      "enabled": true,
+      "domain": "galactic_mass",
+      "pinch_slot": "galactic_mass",
+      "scale_rank": 4,
+      "same_object_group": "same_object:sdss_dr16_galaxies"
+    },
+    "g2_wmap": {
+      "path": "lakes/inputs_promoted/g2_wmap_promoted.jsonl",
+      "enabled": true,
+      "domain": "cmb_anisotropy",
+      "pinch_slot": "cmb_anisotropy",
+      "scale_rank": 5
+    },
+    "l1_gwtc": {
+      "path": "lakes/inputs_promoted/l1_gwtc_promoted.jsonl",
+      "enabled": true,
+      "domain": "gravitational_wave",
+      "pinch_slot": "gravitational_wave",
+      "scale_rank": 4
+    },
+    "p4_ttv": {
+      "path": "lakes/inputs_promoted/p4_ttv_promoted.jsonl",
+      "enabled": true,
+      "domain": "orbital_ttv",
+      "pinch_slot": "orbital_ttv",
+      "scale_rank": 2,
+      "same_object_group": "same_object:nasa_exo_pscomppars"
+    },
+    "p_eccentricity": {
+      "path": "lakes/inputs_promoted/p_ecc_promoted.jsonl",
+      "enabled": true,
+      "domain": "orbital_eccentricity",
+      "pinch_slot": "orbital_eccentricity",
+      "scale_rank": 2,
+      "same_object_group": "same_object:nasa_exo_pscomppars"
+    },
+    "p_inclination": {
+      "path": "lakes/inputs_promoted/p_incl_promoted.jsonl",
+      "enabled": true,
+      "domain": "orbital_inclination",
+      "pinch_slot": "orbital_inclination",
+      "scale_rank": 2,
+      "same_object_group": "same_object:nasa_exo_pscomppars"
+    },
+    "p_transit": {
+      "path": "lakes/inputs_promoted/p_transit_promoted.jsonl",
+      "enabled": true,
+      "domain": "orbital_transit",
+      "pinch_slot": "orbital_transit",
+      "scale_rank": 2,
+      "same_object_group": "same_object:nasa_exo_pscomppars"
+    },
+    "n1_mechanical": {
+      "path": "lakes/inputs_promoted/n1_mechanical_promoted.jsonl",
+      "enabled": true,
+      "domain": "mechanics",
+      "pinch_slot": "null_mechanics",
+      "scale_rank": 0,
+      "__note__": "CONSTANT ZERO in lake (range [0,0]) - see audit item 6."
+    },
+    "n2_behavioral": {
+      "path": "lakes/inputs_promoted/n2_behavioral_promoted.jsonl",
+      "enabled": true,
+      "domain": "behavior",
+      "pinch_slot": "null_behavior",
+      "scale_rank": 0,
+      "__note__": "CONSTANT ZERO in lake (range [0,0]) - see audit item 6."
+    },
+    "n3_mathematical": {
+      "path": "lakes/inputs_promoted/n3_mathematical_promoted.jsonl",
+      "enabled": true,
+      "domain": "mathematics",
+      "pinch_slot": "null_mathematics",
+      "scale_rank": 0,
+      "__note__": "CONSTANT ZERO in lake (range [0,0]) - see audit item 6."
+    },
+    "n4_cosmological": {
+      "path": "lakes/inputs_promoted/n4_cosmological_promoted.jsonl",
+      "enabled": true,
+      "domain": "cosmology_null",
+      "pinch_slot": "null_cosmology",
+      "scale_rank": 0,
+      "__note__": "De-pooled from real cosmology domain. Values [2.32,2.60] unlike zero siblings - audit item 6."
+    },
+    "frb_chime": {
+      "path": "lakes/inputs_promoted/frb_chime_promoted.jsonl",
+      "enabled": true,
+      "domain": "astrophysics",
+      "pinch_slot": "astrophysics",
+      "scale_rank": 4,
+      "__note__": "FIELD FIX: _raw_payload.dm_exc_ne2001"
+    },
+    "g1_galaxy_kinematics": {
+      "path": "lakes/inputs_promoted/g1_galaxy_kinematics_promoted.jsonl",
+      "enabled": true,
+      "domain": "galactic",
+      "pinch_slot": "galactic_kinematic",
+      "scale_rank": 4,
+      "same_object_group": "same_object:sdss_dr16_galaxies",
+      "__note__": "FIELD FIX: _raw_payload.vdisp. WARNING sector_normalized=true."
+    },
+    "k2_pulsar_periods": {
+      "path": "lakes/inputs_promoted/k2_pulsar_periods_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_rotation_pulsar",
+      "pinch_slot": "stellar_rotation_pulsar",
+      "scale_rank": 3,
+      "same_object_group": "same_object:atnf_pulsars",
+      "__note__": "FIELD FIX: _raw_payload.p0_ms. Split from Vol11 pooled stellar_rotation."
+    },
+    "k1_kepler_rotation": {
+      "path": "lakes/inputs_promoted/k1_kepler_rotation_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_rotation_kepler",
+      "pinch_slot": "stellar_rotation_kepler",
+      "scale_rank": 3,
+      "__note__": "FIELD FIX: meta.prot_days (numeric; _raw_payload.prot_days is a STRING)."
+    },
+    "p1_orbital_periods": {
+      "path": "lakes/inputs_promoted/p1_orbital_periods_promoted.jsonl",
+      "enabled": true,
+      "domain": "orbital",
+      "pinch_slot": "orbital_periods",
+      "scale_rank": 2,
+      "same_object_group": "same_object:nasa_exo_pscomppars",
+      "__note__": "FIELD FIX: _raw_payload.period_days"
+    },
+    "p2_orbital_radius": {
+      "path": "lakes/inputs_promoted/p2_orbital_radius_promoted.jsonl",
+      "enabled": true,
+      "domain": "orbital_radius",
+      "pinch_slot": "orbital_radius",
+      "scale_rank": 2,
+      "same_object_group": "same_object:nasa_exo_pscomppars",
+      "__note__": "FIELD FIX: meta.source_row._raw_payload.pl_orbsmax (config asked pl_orbsmax_AU)."
+    },
+    "p3_planet_mass": {
+      "path": "lakes/inputs_promoted/p3_planet_mass_promoted.jsonl",
+      "enabled": true,
+      "domain": "orbital_mass",
+      "pinch_slot": "orbital_mass",
+      "scale_rank": 2,
+      "same_object_group": "same_object:nasa_exo_pscomppars",
+      "__note__": "FIELD FIX: meta.source_row._raw_payload.pl_bmassj (config asked pl_bmassj_Mj)."
+    },
+    "q3_molecular_vibration": {
+      "path": "lakes/inputs_promoted/q3_molecular_vibration_promoted.jsonl",
+      "enabled": true,
+      "domain": "quantum_molecular_vibration",
+      "pinch_slot": "molecular_vibration",
+      "scale_rank": 0,
+      "__note__": "FIELD FIX: _raw_payload.frequency_cm1"
+    },
+    "q9_c60": {
+      "path": "lakes/inputs_promoted/q9_c60_promoted.jsonl",
+      "enabled": true,
+      "domain": "molecular_c60",
+      "pinch_slot": "molecular_c60",
+      "scale_rank": 0,
+      "__note__": "FIELD FIX: frequency_cm1 top-level (config asked frequency_cm_inv). Flat schema, no payload wrapper."
+    },
+    "s1_gaia_parallax": {
+      "path": "lakes/inputs_promoted/s1_gaia_parallax_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar",
+      "pinch_slot": "stellar_distance",
+      "scale_rank": 3,
+      "same_object_group": "same_object:gaia_dr3_1.81M",
+      "__note__": "FIELD FIX: _raw_payload.dist_pc. WARNING sector_normalized=true."
+    },
+    "s2_stellar_kinematics": {
+      "path": "lakes/inputs_promoted/s2_stellar_kinematics_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_kinematic",
+      "pinch_slot": "stellar_kinematic",
+      "scale_rank": 3,
+      "same_object_group": "same_object:gaia_dr3_1.81M",
+      "__note__": "FIELD FIX: meta.val_raw_kms. Vol11 'v_perp' does not exist in lake. WARNING sector_normalized=true."
+    },
+    "s4_gaia_colour": {
+      "path": "lakes/inputs_promoted/s4_gaia_colour_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_colour",
+      "pinch_slot": "stellar_colour",
+      "scale_rank": 3,
+      "same_object_group": "same_object:gaia_dr3_1.81M",
+      "__note__": "FIELD FIX: meta.source_row._raw_payload.bp_rp"
+    },
+    "t2_planetary": {
+      "path": "lakes/inputs_promoted/t2_planetary_promoted.jsonl",
+      "enabled": true,
+      "domain": "planetary",
+      "pinch_slot": "planetary",
+      "scale_rank": 2,
+      "__note__": "FIELD FIX: double-nested. See scripts/unwrap_t_series.py"
+    },
+    "t4_cosmological": {
+      "path": "lakes/inputs_promoted/t4_cosmological_promoted.jsonl",
+      "enabled": true,
+      "domain": "cosmology",
+      "pinch_slot": "cosmology",
+      "scale_rank": 4,
+      "__note__": "FIELD FIX: double-nested. See scripts/unwrap_t_series.py"
+    },
+    "p1_wrongbox": {
+      "path": "lakes/inputs_promoted/p1_wrong_promoted.jsonl",
+      "enabled": true,
+      "domain": "orbital_wrongbox",
+      "pinch_slot": "falsification_orbital",
+      "scale_rank": 2,
+      "same_object_group": "same_object:nasa_exo_pscomppars",
+      "__note__": "PATH FIX: file is p1_wrong_promoted.jsonl, not p1_wrongbox_promoted.jsonl. Never missing."
+    },
+    "k2_wrongbox": {
+      "path": "lakes/inputs_promoted/k2_wrongbox_promoted.jsonl",
+      "enabled": true,
+      "domain": "stellar_wrongbox",
+      "pinch_slot": "falsification_stellar",
+      "scale_rank": 3,
+      "same_object_group": "same_object:atnf_pulsars"
+    },
+    "mat_wrongbox": {
+      "path": "lakes/inputs_promoted/mat_wrongbox_promoted.jsonl",
+      "enabled": true,
+      "domain": "materials_wrongbox",
+      "pinch_slot": "falsification_materials",
+      "scale_rank": 3
+    },
+    "q1_atomic_spectra": {
+      "path": "lakes/inputs_promoted/q1_atomic_spectra_promoted.jsonl",
+      "enabled": false,
+      "domain": "quantum",
+      "pinch_slot": "atomic_spectra",
+      "scale_rank": 0,
+      "__note__": "GATED: same NIST ASD source as L_emission_nist (identical H I line 91.232366nm = 109610.2232cm-1). Lake meta says scalar is upper_energy_cm1, config says wavelength_nm. Self-correlation risk + config/provenance disagreement."
+    },
+    "chemistry": {
+      "path": "lakes/inputs_promoted/chemistry_promoted.jsonl",
+      "enabled": false,
+      "domain": "chemistry",
+      "pinch_slot": "chemistry",
+      "scale_rank": 2,
+      "__note__": "GATED - GENUINE REBUILD: no bond length at any depth. _raw_payload={zinc_id,n_atoms,max_radius,scalar_invariant}. scalar_klc == scalar_invariant bit-identical: NO log transform was applied."
+    },
+    "materials": {
+      "path": "lakes/inputs_promoted/materials_promoted.jsonl",
+      "enabled": false,
+      "domain": "materials",
+      "pinch_slot": "materials",
+      "scale_rank": 3,
+      "__note__": "GATED: field is DERIVED, bond_length=(volume/nsites)^(1/3), documented in lake meta RCA Vol7 Ch5. Needs engine support for derived fields. See scripts/fix_materials_scalarization.py"
+    },
+    "q2_molecular_geometry": {
+      "path": "lakes/inputs_promoted/q2_molecular_geometry_promoted.jsonl",
+      "enabled": false,
+      "domain": "quantum_molecular_geometry",
+      "pinch_slot": "molecular_geometry",
+      "scale_rank": 0,
+      "__note__": "GATED: value sits at _raw_payload.value with measurement_type tag. Reading 'value' blindly would mix bond lengths with other measurement types. Needs typed read."
+    },
+    "s3_gaia_luminosity": {
+      "path": "lakes/inputs_promoted/s3_gaia_luminosity_promoted.jsonl",
+      "enabled": false,
+      "domain": "stellar_luminosity",
+      "pinch_slot": "stellar_luminosity",
+      "scale_rank": 3,
+      "same_object_group": "same_object:gaia_dr3_1.81M",
+      "__note__": "GATED: no abs_g_mag_shifted. Lake has M_G_median, phot_g_mean_mag, parallax. scalarization_formula string truncated in dump - need full text."
+    },
+    "g1a_radius": {
+      "path": "lakes/inputs_promoted/g1a_radius_promoted.jsonl",
+      "enabled": false,
+      "domain": "galactic_radius",
+      "pinch_slot": "galactic_radius",
+      "scale_rank": 4,
+      "same_object_group": "same_object:sdss_dr16_galaxies",
+      "__note__": "GATED: min=-9999 sentinel. log(1-9999) is undefined. Needs sentinel filter before enable."
+    },
+    "b4_pdb_protein": {
+      "path": "lakes/inputs_promoted/b4_pdb_protein_promoted.jsonl",
+      "enabled": false,
+      "domain": "biology_backbone_top8000",
+      "pinch_slot": "biology_backbone_top8000",
+      "scale_rank": 1,
+      "same_object_group": "same_object:pdb_backbone",
+      "__note__": "GATED: angle_degrees spans [-180,180]. log_standard undefined for ~half the records. Needs pre-registered formula ruling (abs? offset?)."
+    },
+    "b5_pdb_full_protein": {
+      "path": "lakes/inputs_promoted/b5_pdb_full_protein_promoted.jsonl",
+      "enabled": false,
+      "domain": "biology_backbone_full",
+      "pinch_slot": "biology_backbone_full",
+      "scale_rank": 1,
+      "same_object_group": "same_object:pdb_backbone",
+      "__note__": "GATED: same [-180,180] issue as b4. Also note b5_pdb_protein_promoted.jsonl exists separately on disk - possible subset overlap."
+    },
+    "s2_wrongbox": {
+      "path": "lakes/inputs_promoted/s2_wrongbox_promoted.jsonl",
+      "enabled": false,
+      "domain": "kinematic_wrongbox",
+      "pinch_slot": "falsification_kinematic",
+      "scale_rank": 3,
+      "same_object_group": "same_object:gaia_dr3_1.81M",
+      "__note__": "GATED: raw v_perp max 3.70e10 km/s = 123,000x c. A wrongbox applies wrong MATH to right DATA; this is wrong data."
+    },
+    "L_fermi_velocity": {
+      "path": "lakes/inputs_promoted/L_fermi_velocity_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_fermi_velocity",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: derived probe, paired scramble control retired. Fleet verdict published."
+    },
+    "L_fermi_extended": {
+      "path": "lakes/inputs_promoted/L_fermi_extended_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_fermi_extended",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: derived probe, paired scramble control retired. Fleet verdict published."
+    },
+    "L_auger_electrons": {
+      "path": "lakes/inputs_promoted/L_auger_electrons_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_auger_electrons",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: derived probe, paired scramble control retired. Fleet verdict published."
+    },
+    "L_conversion_electrons": {
+      "path": "lakes/inputs_promoted/L_conversion_electrons_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_conversion_electrons",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: derived probe, paired scramble control retired. Fleet verdict published."
+    },
+    "L_compton_electrons": {
+      "path": "lakes/inputs_promoted/L_compton_electrons_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_compton_electrons",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: derived probe, paired scramble control retired. Fleet verdict published."
+    },
+    "L_arpes_electrons": {
+      "path": "lakes/inputs_promoted/L_arpes_electrons_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_arpes_electrons",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: derived probe, paired scramble control retired. Fleet verdict published."
+    },
+    "L_susceptibility_dia": {
+      "path": "lakes/inputs_promoted/L_susceptibility_dia_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_susceptibility_dia",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: derived probe, paired scramble control retired. Fleet verdict published."
+    },
+    "L_susceptibility_para": {
+      "path": "lakes/inputs_promoted/L_susceptibility_para_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_susceptibility_para",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: derived probe, paired scramble control retired. Fleet verdict published."
+    },
+    "L_fermi_scramble_ctrl": {
+      "path": "lakes/inputs_promoted/L_fermi_scramble_ctrl_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_fermi_scramble_ctrl",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: sister-paper scramble control lake."
+    },
+    "L_auger_scramble_ctrl": {
+      "path": "lakes/inputs_promoted/L_auger_scramble_ctrl_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_auger_scramble_ctrl",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: sister-paper scramble control lake."
+    },
+    "L_conversion_scramble_ctrl": {
+      "path": "lakes/inputs_promoted/L_conversion_scramble_ctrl_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_conversion_scramble_ctrl",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: sister-paper scramble control lake."
+    },
+    "L_compton_scramble_ctrl": {
+      "path": "lakes/inputs_promoted/L_compton_scramble_ctrl_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_compton_scramble_ctrl",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: sister-paper scramble control lake."
+    },
+    "L_arpes_scramble_ctrl": {
+      "path": "lakes/inputs_promoted/L_arpes_scramble_ctrl_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_arpes_scramble_ctrl",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: sister-paper scramble control lake."
+    },
+    "L_susceptibility_dia_scramble": {
+      "path": "lakes/inputs_promoted/L_susceptibility_dia_scramble_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_susceptibility_dia_scramble",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: sister-paper scramble control lake."
+    },
+    "L_susceptibility_para_scramble": {
+      "path": "lakes/inputs_promoted/L_susceptibility_para_scramble_promoted.jsonl",
+      "enabled": false,
+      "domain": "__retired__L_susceptibility_para_scramble",
+      "pinch_slot": "__retired__",
+      "scale_rank": 0,
+      "__note__": "RETIRED: sister-paper scramble control lake."
+    },
+    "np1_orbital_periods": {
+      "path": "lakes/inputs_promoted/np1_orbital_periods_promoted.jsonl",
+      "enabled": false,
+      "domain": "orbital_null",
+      "pinch_slot": "null_orbital",
+      "scale_rank": 2,
+      "__note__": "ON DISK, NOT IN VOL11 CONFIG. Sovereign orbital null (NP1). chaos_null_null_orbital.jsonl exists in synthetic/, so it has been scored before. Awaiting ruling."
+    },
+    "b5_pdb_protein": {
+      "path": "lakes/inputs_promoted/b5_pdb_protein_promoted.jsonl",
+      "enabled": false,
+      "domain": "biology_backbone_b5subset",
+      "pinch_slot": "biology_backbone_b5subset",
+      "scale_rank": 1,
+      "same_object_group": "same_object:pdb_backbone",
+      "__note__": "ON DISK. Sister config used this; Vol11 used b5_pdb_full_protein. Separate B5_PDB vs B5_PDB_Full source dirs. Overlap with b4/b5_full unverified."
+    },
+    "planck_null": {
+      "path": "lakes/synthetic/planck_null.jsonl",
+      "enabled": false,
+      "domain": "planck",
+      "pinch_slot": "null_planck",
+      "scale_rank": 0,
+      "__note__": "Vol11: disabled. Carried forward disabled."
+    }
+  }
+}

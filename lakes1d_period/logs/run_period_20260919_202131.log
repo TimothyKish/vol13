@@ -1,0 +1,92 @@
+KishLattice Period Engine Run Log
+========================================================================
+ started_utc : 2026-09-19T20:21:31Z
+ fingerprint : e7d91acd7433fa08f5f1882d520aec69c5038140da633734f9986753615f96fe8f5eacc938f972d135ec481b861d424ab686de6f8f91ea0e25e464b060f01f16cc2a582a39ad91aba6c6b2269338c1a9
+  resources: 20 core(s), 19 worker(s), GPU: none (CPU only)   [rabbit]   sample cap: 2,000,000
+ start stage : logify   support gate: MANDATORY
+========================================================================
+
+[STAGE] logify
+  logify L_comprehensive_master_promoted.jsonl: 22388943 -> 22388943
+  logify L_emission_nist_promoted.jsonl: 189330 -> 189330
+  logify L_pulsar_spin_promoted.jsonl: 2527 -> 2527
+  logify L_universal_angular_promoted.jsonl: 270162 -> 270162
+  logify L_universal_energy_promoted.jsonl: 669605 -> 669605
+  logify L_universal_length_promoted.jsonl: 2123390 -> 2123390
+  logify L_universal_mass_promoted.jsonl: 1843276 -> 1843276
+  logify L_universal_time_promoted.jsonl: 351384 -> 351384
+  logify L_universal_topology_promoted.jsonl: 8099779 -> 8099779
+  logify L_universal_velocity_promoted.jsonl: 4213607 -> 4213607
+  logify q5_decay_promoted.jsonl: 3205 -> 0
+
+  DISPATCH REPORT
+    [comprehensive_master] {'logified': 22388943}
+    [quantum_transitional] {'logified': 189330}
+    [pulsar_spin] {'logified': 2527}
+    [universal_angular] {'logified': 270162}
+    [universal_energy] {'logified': 669605}
+    [universal_length] {'logified': 2123390}
+    [universal_mass] {'logified': 1843276}
+    [universal_time] {'logified': 351384}
+    [universal_topology] {'logified': 8099779}
+    [universal_velocity] {'logified': 4213607}
+
+[STAGE] support + scan + census
+    [sample] L_comprehensive_master_logified.jsonl: 22,388,943 records > cap 2,000,000 -> reservoir-sampled to 2,000,000 (seed 20260913, deterministic). Numbers are on the subsample; re-run with KLGHS_CAP=22388943 on adequate RAM for the full lake.
+
+  [L_comprehensive_master] n=2,000,000 [sampled 2,000,000/22,388,943]
+    support: raw 15.02 eff 4.34 infl 3.46 -> SPARSE-TAIL-ARTIFACT
+    shape:   SPIKED -- one bin holds >=25% of mass -- likely a single value or placeholder
+    scan: best resolvable 7/pi excess 2.7 -- below bar
+
+  [L_emission_nist] n=189,330
+    support: raw 23.04 eff 6.77 infl 3.40 -> SPARSE-TAIL-ARTIFACT
+    shape:   SPIKED -- one bin holds >=25% of mass -- likely a single value or placeholder
+    scan: best resolvable 10/pi excess 4.3 -- below bar
+
+  [L_pulsar_spin] n=2,527
+    support: raw 9.04 eff 8.37 infl 1.08 -> SUPPORT-OK
+    shape:   FILLED -- mass spread across the span -- honest support
+    scan: best resolvable 6/pi excess 3.5 -- below bar
+
+  [L_universal_angular] n=270,162
+    support: raw 65.69 eff 56.22 infl 1.17 -> SUPPORT-OK
+    shape:   SPIKED -- one bin holds >=25% of mass -- likely a single value or placeholder
+    scan: best resolvable 12/pi excess 3.7 -- below bar
+
+  [L_universal_energy] n=669,605
+    support: raw 44.16 eff 26.69 infl 1.65 -> TAIL-INFLATED
+    shape:   TAIL-INFLATED -- inflation 1.7x -- effective span notably below raw
+    scan: best resolvable 14/pi excess 1.7 -- below bar
+    [sample] L_universal_length_logified.jsonl: 2,123,390 records > cap 2,000,000 -> reservoir-sampled to 2,000,000 (seed 20260913, deterministic). Numbers are on the subsample; re-run with KLGHS_CAP=2123390 on adequate RAM for the full lake.
+
+  [L_universal_length] n=2,000,000 [sampled 2,000,000/2,123,390]
+    support: raw 67.15 eff 19.69 infl 3.41 -> SPARSE-TAIL-ARTIFACT
+    shape:   SPIKED -- one bin holds >=25% of mass -- likely a single value or placeholder
+    scan: best resolvable 12/pi excess 2.6 -- below bar
+
+  [L_universal_mass] n=1,843,276
+    support: raw 26.76 eff 9.40 infl 2.85 -> TAIL-INFLATED
+    shape:   SPIKED -- one bin holds >=25% of mass -- likely a single value or placeholder
+    scan: best resolvable 10/pi excess 3.7 -- below bar
+
+  [L_universal_time] n=351,384
+    support: raw 125.38 eff 18.50 infl 6.78 -> SPARSE-TAIL-ARTIFACT
+    shape:   SPIKED -- one bin holds >=25% of mass -- likely a single value or placeholder
+    scan: best resolvable 16/pi excess 1.3 -- below bar
+    [sample] L_universal_topology_logified.jsonl: 8,099,779 records > cap 2,000,000 -> reservoir-sampled to 2,000,000 (seed 20260913, deterministic). Numbers are on the subsample; re-run with KLGHS_CAP=8099779 on adequate RAM for the full lake.
+
+  [L_universal_topology] n=2,000,000 [sampled 2,000,000/8,099,779]
+    support: raw 7.50 eff 4.71 infl 1.59 -> TAIL-INFLATED
+    shape:   TAIL-INFLATED -- inflation 1.6x -- effective span notably below raw
+    scan: best resolvable 9/pi excess 5.1 -- below bar
+    [sample] L_universal_velocity_logified.jsonl: 4,213,607 records > cap 2,000,000 -> reservoir-sampled to 2,000,000 (seed 20260913, deterministic). Numbers are on the subsample; re-run with KLGHS_CAP=4213607 on adequate RAM for the full lake.
+
+  [L_universal_velocity] n=2,000,000 [sampled 2,000,000/4,213,607]
+    support: raw 42.84 eff 22.72 infl 1.89 -> TAIL-INFLATED
+    shape:   SPIKED -- one bin holds >=25% of mass -- likely a single value or placeholder
+    scan: best resolvable 6/pi excess 4.1 -- below bar
+
+Receipt : C:\Users\timot\Downloads\Science\src\Unification\vol13\lakes1d_period\logs\run_period_20260919_202131.receipt.txt
+Log     : C:\Users\timot\Downloads\Science\src\Unification\vol13\lakes1d_period\logs\run_period_20260919_202131.log
+Runtime : 588.4s
